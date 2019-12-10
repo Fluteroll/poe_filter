@@ -1,0 +1,2067 @@
+﻿# Script edited with Filtration
+# EnableBlockGroups
+# 上面那行是Filtration v0.17開啟勾選框框()要加的指令
+# 小呆 edit poe v3.7.03 update:2019.6.26
+#CustomAlertSound "Mario_Jump.ogg" 低階通貨
+#CustomAlertSound "RO_Cat.ogg" 中階通貨
+#CustomAlertSound "Mario_Mushroom.ogg" 中高階通貨 五連
+#CustomAlertSound "Mario_1up.ogg" 高階通貨 命運卡T1 眾神聖器
+#CustomAlertSound "Mario_Pipe.ogg" 女神祭品 
+#CustomAlertSound "Mario_Timesup.ogg" 神聖石以上通貨 六連 高價T1命運卡 釣竿
+#CustomAlertSound "GoogleT_mirror.ogg" 卡蘭德魔鏡
+#CustomAlertSound "LOL_Legendary.ogg" T1傳奇 六連傳奇
+#CustomAlertSound "LOL_GodLike.ogg" T2傳奇 五連傳奇
+#CustomAlertSound "LOL_Dominating.ogg" T2.5傳奇
+#CustomAlertSound "GoogleT_shaper85.ogg" 塑界85
+#CustomAlertSound "GoogleT_elder85.ogg" 尊師85
+#CustomAlertSound "HearthStone_Epic.ogg" 水晶腰帶 鋼鑄戒指 蛋白石戒指
+#CustomAlertSound "GoogleT_harbinger.ogg" 神諭碎片
+#CustomAlertSound "GoogleT_abyss.ogg" 深淵腰帶 深淵珠寶 
+#CustomAlertSound "GoogleT_incursion.ogg" 穿越聯盟物品
+#CustomAlertSound "GoogleT_delve.ogg" 掘獄聯盟物品
+#CustomAlertSound "GoogleT_betrayal.ogg" 背叛聯盟物品
+#CustomAlertSound "GoogleT_synthesis.ogg" 追憶聯盟物品
+#CustomAlertSound "GoogleT_legion.ogg" 戰亂聯盟物品
+#CustomAlertSound "HearthStone_Rare.ogg" 精良物品
+#CustomAlertSound "LOL_Aced.ogg" 命運卡T2
+#CustomAlertSound "DOMO_mid.ogg" 命運卡T3
+#CustomAlertSound "OW_Tracer.wav" 紅圖 橘圖
+#CustomAlertSound "RO_RefineSuccess.ogg" 六洞 
+
+#
+# 此過濾器語法使用英文，國際服可用
+# 過濾器索引
+#
+# 地圖
+# 光柱:白
+# ICON:白 黃 紅 方塊
+# Section[100]異界尊師地圖
+# Section[101]雕塑(塑界者)地圖
+# Section[102]地圖碎片
+# Section[103]眾神聖器
+# Section[104]地圖
+# Section[105]聖甲蟲
+#
+# 命運卡
+# 光柱:藍
+# ICON:藍 方塊
+# Section[201]T1命運卡
+# Section[202]T2命運卡
+# Section[203]T3命運卡
+# Section[204]T4命運卡
+# Section[205]其他命運卡
+#
+# 特殊物品
+# 光柱:紅
+# ICON:紅 六邊形
+# Section[302]特殊物品 - 迷宮
+# Section[303]特殊物品 - 裂痕聯盟
+# Section[304]特殊物品 - 還原玉
+# Section[305]特殊物品 - 預言聯盟
+# Section[306]特殊物品 - 普蘭德斯聯盟
+# Section[307]特殊物品 - 聯盟石
+# Section[308]特殊物品 - 古典遺鑰
+# Section[310]特殊物品 - 穿越聯盟
+# Section[398]特殊物品 - 任務道具
+# Section[399]特殊物品 - 魚竿
+#
+# 通貨
+# 光柱:黃
+# ICON:紅 黃 白 藍 綠 圓形
+# Section[401]通貨 - T7
+# Section[402]通貨 - T6
+# Section[403]通貨 - T5
+# Section[404]通貨 - T4
+# Section[405]通貨 - T3
+# Section[406]通貨 - T2
+# Section[407]通貨 - T1.5
+# Section[408]通貨 - T1
+# Section[409]通貨碎片
+# Section[410]精髓
+# Section[411]獸寓通貨
+# Section[412]穿越聯盟
+# Section[413]掘獄聯盟
+# Section[414]戰亂聯盟
+# Section[499]通貨安全線
+#
+# 技能石
+# Section[501]技能石
+#
+# 裝備
+# 光柱:橘 綠
+# ICON:紅 黃 白 藍 綠 星形
+# Section[1000]傳奇-白袍
+# Section[1001]6L
+# Section[1002]尊者、塑者物品
+# Section[1003]神喻聯盟裝備碎片
+# Section[1004]T1傳奇
+# Section[1005]T2傳奇
+# Section[1006]預言傳奇
+# Section[1007]其他傳奇 (傳奇安全線)
+# Section[1008]5L
+# Section[1009]6S
+# Section[1010]點機會石的基底 ex.術士長靴(空向)
+# Section[1012]穿越聯盟詞綴裝備
+# Section[1013]深淵聯盟-深淵腰帶
+# Section[1014]火靈用粗製弓
+# Section[1015]掘獄聯盟詞綴裝備
+# Section[1016]背叛聯盟詞綴裝備
+# Section[1017]追憶聯盟詞綴裝備
+# Section[1028]異界輿圖新基底 ex.鋼鑄戒指.蛋白石戒指
+# Section[1030]稀有裝備
+# Section[1035]商店配方-換幻色石的裝備、換製圖釘的錘子、魔法素布腰帶(稀有武器洗回魔法材料)
+# Section[1037](白藍裝備安全線)
+# 
+# 藥劑
+# Section[2001]藥劑
+# 
+# 珠寶
+# Section[3001]深淵珠寶
+# Section[3002]天賦珠寶
+# 
+# 安全線 (所有物品)
+# Section[9001]
+
+
+
+
+
+
+
+
+
+# Section: [100] 異界尊師地圖
+
+Show # 地圖 - 異界尊師地圖
+    ElderMap True
+	Class Maps
+    SetBackgroundColor 225 128 225 255
+    SetBorderColor 255 255 0
+    SetFontSize 45
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+# Section: [101] 雕塑(塑界者)地圖
+
+#Show # 地圖 - 雕塑(塑界者)紅圖 T11~T15
+#    ShapedMap True
+#    DropLevel >= 73
+#    Class "Maps"
+#    SetBackgroundColor 128 225 225 255
+#    SetBorderColor 255 0 0
+#    SetFontSize 45
+#    CustomAlertSound "OW_Tracer.wav"
+
+#Show # 地圖 - 雕塑(塑界者)黃圖 T6~T10
+#    ShapedMap True
+#    Class "Maps"
+#    SetBackgroundColor 128 225 225 255
+#    SetBorderColor 255 255 0
+#    SetFontSize 45
+#    CustomAlertSound "OW_Tracer.wav"
+
+# Section: [102]地圖碎片
+
+Show # 地圖碎片 - 女神祭品
+    BaseType "Offering to the Goddess"
+    SetBorderColor 102 178 255
+    CustomAlertSound "Mario_Pipe.ogg"
+	MinimapIcon 0 Yellow Square
+	PlayEffect White
+
+
+Show # 地圖碎片 - 凡人的希望 凡人的無知
+    Class "Map Fragments"
+    BaseType "Mortal Hope" "Mortal Ignorance"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖碎片 - 凡人的哀傷 凡人的憤怒
+    Class "Map Fragments"
+    BaseType "Mortal"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖碎片 - T16聖獸斷片
+    Class "Map Fragments"
+    BaseType "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Fragment of the Hydra" "Breachstone"
+	SetBackgroundColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖碎片 - 議會碎片 希伯之鑰 伊瑞之鑰 茵雅之鑰 福庫爾之鑰
+    Class "Map Fragments"
+    BaseType "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖碎片 - 午夜的奉獻
+    Class "Map Fragments"
+    BaseType "Sacrifice at Midnight"
+	SetBackgroundColor 102 178 255
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+	
+	
+Show # 地圖碎片 - 裂痕石
+	Class "Map Fragments"
+	BaseType "Breachstone" 
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+	
+Show # 地圖碎片 - 戰亂聯盟 印記
+    Class "Map Fragments"
+    BaseType "Timeless Maraketh Emblem" "Timeless Eternal Emblem" "Timeless Karui Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+	
+# Section: [103]眾神聖器
+
+Show # 眾神聖器 - 聖器
+    BaseType "Divine Vessel"
+	SetBackgroundColor 102 178 255
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 眾神聖器 - 奪取之魂
+    BaseType "Captured Soul of"
+	SetBackgroundColor 102 178 255
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+	
+# 地圖碎片 - 安全線
+Show # 地圖碎片 - 其他沒寫到的地圖碎片
+    Class "Map Fragments"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+# Section: [104]地圖
+
+Show # 地圖 - 傳奇
+    Rarity = Unique
+    Class "Maps"
+    SetFontSize 45
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖 - 師尊地圖
+	Class Maps
+	ElderMap True
+    SetBorderColor 255 0 0
+    SetFontSize 45
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖 - 雕塑地圖T6~T10
+	ShapedMap True
+	MapTier <= 10
+	Class Maps
+	SetBorderColor 255 255 0
+	MinimapIcon 0 Yellow Square
+	PlayEffect White
+	
+Show # 地圖 - 雕塑地圖T11~T15
+	ShapedMap True
+	MapTier <= 15
+	Class Maps
+	SetBorderColor 255 0 0
+    SetFontSize 42
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+	
+Show # 地圖 - 雕塑地圖T16~
+	ShapedMap True
+	MapTier >= 16
+	Class Maps
+    SetBorderColor 255 0 0
+    SetFontSize 42
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+	
+Show # 地圖 - T1~T5
+    MapTier <= 5
+    Class "Maps"
+	MinimapIcon 0 White Square
+	PlayEffect White
+
+Show # 地圖 - T6~T10
+    MapTier <= 10
+    Class "Maps"
+    SetBorderColor 255 255 0
+	MinimapIcon 0 Yellow Square
+	PlayEffect White
+
+Show # 地圖 - T11~T15
+    MapTier <= 15
+    Class "Maps"
+    SetBorderColor 255 0 0
+    SetFontSize 42
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖 - T16 火鳳凰熔核 牛頭人謎域 九頭蛇冰窟 奇美拉魔坑
+    Class "Maps"
+    BaseType "Forge of the Phoenix Map" "Maze of the Minotaur Map" "Lair of the Hydra Map" "Pit of the Chimera Map" "Vaal Temple Map"
+    SetBackgroundColor 161 0 225
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+
+Show # 地圖 - T16以上
+	MapTier >= 16
+    Class "Maps"
+    SetBackgroundColor 161 0 225
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "OW_Tracer.wav"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 地圖 - 安全線 
+    Class "Maps"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+	
+	
+
+# Section: [105] 聖甲蟲
+
+Show # 聖甲蟲 - T1
+	Class "Map Fragments"
+	BaseType "Gilded"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 聖甲蟲 - T2
+	Class "Map Fragments"
+	BaseType "Polished"
+	SetBackgroundColor 102 178 255
+    SetFontSize 37
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # 聖甲蟲 - T3
+	Class "Map Fragments"
+	BaseType "Rusted"
+	SetBackgroundColor 102 178 255
+    SetFontSize 32
+    CustomAlertSound "Mario_Jump.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+	
+	
+	
+	
+	
+	
+# Section: [201]T1 T2命運卡
+# 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
+Show # 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
+    Class "Divination"
+	BaseType "The Wolf's Shadow" "The Master Artisan"
+    SetTextColor 122 178 255
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Show # 命運卡 - T1 
+	Class "Divination"
+	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power"
+    SetTextColor 0 0 0 
+	SetBackgroundColor 122 178 255
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+	
+Show # 命運卡 - T2 
+    Class "Divination"
+	BaseType "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Pride Before the Fall" "The Cartographer" "The Deep Ones" "The Landing" "The Professor" "The Queen" "The Seeker" "The Sephirot" "The Soul" "The Undaunted" "The Void"
+    SetTextColor 122 178 255
+    SetBorderColor 161 0 225
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Section: [202]T3命運卡
+
+Show # 命運卡 - T3 
+    Class "Divination"
+	BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Demigod's Wager" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Merciless Armament" "Monochrome" "No Traces" "Perfection" "Rebirth" "Sambodhi's Vow" "The Artist" "The Breach" "The Brittle Emperor" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Ethereal" "The Hale Heart" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Master" "The Offering" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The World Eater" "Time-Lost Relic" "Vanity"
+    SetTextColor 122 178 255
+    SetBorderColor 102 178 255
+    CustomAlertSound "LOL_Aced.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Section: [203]T4命運卡
+
+Show # 命運卡 - T4 
+    Class "Divination"
+	BaseType "Rain of Chaos" "Boon of Justice" "Coveted Possession" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Loyalty" "Lucky Connections" "The Cacophony" "The Catalyst" "The Fool" "The Gemcutter" "The Innocent" "The Puzzle" "The Scholar" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
+    SetTextColor 122 178 255
+    SetBorderColor 170 158 129
+    CustomAlertSound "DOMO_mid.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Section: [204]T5命運卡
+
+Show # 命運卡 - T5 
+    Class "Divination"
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Dark Temptation" "Destined to Crumble" "Dying Anguish" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Coming Storm" "The Drunken Aristocrat" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Scarred Meadow" "The Summoner" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Volatile Power"
+    SetTextColor 122 178 255
+
+# Section: [205]其他命運卡
+# 命運卡 - 安全線
+Show # 命運卡 - 其他
+    Class "Divination"
+    SetTextColor 122 178 255
+    CustomAlertSound "DOMO_mid.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+
+	
+	
+	
+	
+	
+	
+	
+# Section: [302]特殊物品 - 迷宮
+
+Show # 特殊物品 - 迷宮物品
+    Class "Labyrinth"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [303]特殊物品 - 裂痕聯盟
+
+Show # 特殊物品 - 裂痕物品 - 祝福
+    Class "Currency"
+    BaseType "Blessing"
+	SetFontSize 40
+    SetBackgroundColor 102 178 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+Show # 特殊物品 - 裂痕物品 - 夏烏拉裂片
+    Class "Currency"
+    BaseType "Splinter of Chayula"
+	SetFontSize 40
+	SetBorderColor 211 29 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+Show # 特殊物品 - 裂痕物品 - 索伏裂片
+    Class "Currency"
+    BaseType "Splinter of Xoph"
+	SetFontSize 40
+	SetBorderColor 255 34 34
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+Show # 特殊物品 - 裂痕物品 - 烏爾尼多裂片
+    Class "Currency"
+    BaseType "Splinter of Uul-Netol"
+	SetFontSize 40
+	SetBorderColor 255 255 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+Show # 特殊物品 - 裂痕物品 - 艾許裂片
+    Class "Currency"
+    BaseType "Splinter of Esh"
+	SetFontSize 40
+	SetBorderColor 27 249 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+Show # 特殊物品 - 裂痕物品 - 沃托裂片
+    Class "Currency"
+    BaseType "Splinter of Tul"
+	SetFontSize 40
+	SetBorderColor 45 255 27
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+# Section: [304]特殊物品 - 還原玉
+
+Show # 特殊物品 - 還原玉
+    Class "Currency"
+    BaseType "Unshaping Orb"
+    SetBorderColor 102 178 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [305]特殊物品 - 預言聯盟
+
+Show # 特殊物品 - 預言
+    Class "Currency"
+    BaseType "Prophecy"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [306]特殊物品 - 普蘭德斯聯盟
+
+Show # 特殊物品 - 普蘭德斯金幣
+    Class "Currency"
+    BaseType "Perandus Coin"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [307]特殊物品 - 聯盟石
+
+Show # 特殊物品 - 聯盟石 - 魔法
+    Rarity >= Magic
+    Class "Leaguestone"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 聯盟石 - 普通
+    Rarity = Normal
+    Class "Leaguestone"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [308]特殊物品 - 古典遺鑰
+
+Show # 特殊物品 - 古典遺鑰
+    Class "Misc Map Items"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [310]特殊物品 - 穿越聯盟
+
+Show # 特殊物品 - 穿越聯盟物品
+	Class "Incursion Item"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_incursion.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [398]特殊物品 - 任務道具
+
+Show # 特殊物品 - 任務道具
+    Class "Quest Items"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [399]特殊物品 - 魚竿
+
+Show # 特殊物品 - 魚竿
+    Class "Fishing Rod"
+    SetTextColor 255 0 128
+    SetBorderColor 255 0 128
+    SetFontSize 42
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+	
+	
+	
+	
+	
+	
+	
+# Section: [401]通貨 - T7
+
+Show # 通貨 - T7 知識卷軸
+    Class "Currency"
+    BaseType "Scroll of Wisdom"
+
+Show # 通貨 - T7 傳送卷軸
+    Class "Currency"
+    BaseType "Portal Scroll"
+
+# Section: [402]通貨 - T6
+
+Show # 通貨 - T6 磨刀石
+    Class "Currency"
+    BaseType "Blacksmith's"
+
+Show # 通貨 - T6 護甲片
+    Class "Currency"
+    BaseType "Armourer's"
+
+# Section: [403]通貨 - T5
+
+Show # 通貨 - T5 蛻變石
+    Class "Currency"
+    BaseType "Orb of Transmutation"
+
+Show # 通貨 - T5 增幅石
+    Class "Currency"
+    BaseType "Orb of Augmentation"
+
+# Section: [404]通貨 - T4
+
+Show # 通貨 - T4 改造石 幻色石
+    Class "Currency"
+    BaseType "Orb of Alteration" "Chromatic Orb"
+    SetBorderColor 170 158 129
+    CustomAlertSound "Mario_Jump.ogg"
+
+Show # 通貨 - T4 機會石 工匠石 玻璃彈珠 預言銀幣
+    Class "Currency"
+    BaseType "Orb of Chance" "Jeweller's Orb" "Glassblower's Bauble" "Silver Coin"
+    SetBorderColor 170 158 129
+	SetFontSize 40
+    CustomAlertSound "Mario_Jump.ogg"
+#	MinimapIcon 2 White Circle
+
+# Section: [405]通貨 - T3
+
+Show # 通貨 - T3 鏈結石 點金石 製圖釘 工程石
+	Class "Currency"
+    BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb"
+    SetBorderColor 254 254 118
+	SetFontSize 40
+    CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 1 White Circle
+	PlayEffect Yellow Temp
+
+# Section: [406]通貨 - T2
+
+Show # 通貨 - T2 祝福石 富豪石 後悔石 混沌石 寶石匠的稜鏡 瓦爾寶珠 豐裕牌組 製圖六分儀．見習 重鑄石 古變石 地平石 束縛石 崇高石碎片 製圖六分儀．學者
+    Class "Currency"
+    BaseType "Blessed Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard" "Journeyman Cartographer's Sextant"
+    SetBorderColor 102 178 255
+	SetFontSize 40
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+# Section: [407]通貨 - T1.5
+
+Show # 通貨 - T1.5 製圖六分儀．大師 神諭石
+    Class "Currency"
+    BaseType "Master Cartographer's Sextant" "Harbinger's Orb"
+    SetBorderColor 161 0 225
+	SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+# Section: [408]通貨 - T1
+
+Show # 通貨 - T1自帶掉落音效 - 神聖石 無效石
+    Class "Currency"
+    BaseType "Divine Orb" "Orb of Annulment"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+	
+Show # 通貨 - T1 永恆寶珠 白化的羽毛 卡蘭德的魔鏡碎片
+    Class "Currency"
+    BaseType "Eternal Orb" "Albino Rhoa Feather" "Mirror Shard" "Orb of Annulment"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - T1自帶掉落音效 - 崇高石
+    Class "Currency"
+    BaseType "Exalted Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - T1自帶掉落音效 - 卡蘭德魔鏡
+    Class "Currency"
+    BaseType "Mirror of Kalandra"
+    SetTextColor 0 0 0
+    SetBackgroundColor 161 0 225
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "GoogleT_mirror.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+# Section: [409]通貨碎片
+
+Show # 通貨碎片 - 卷軸碎片
+    Class "Currency"
+    BaseType "Scroll Fragment"
+
+Show # 通貨碎片 - 蛻變石碎片
+    Class "Currency"
+    BaseType "Transmutation Shard"
+
+Show # 通貨碎片 - 改造石碎片
+    Class "Currency"
+    BaseType "Alteration Shard"
+
+Show # 通貨碎片 - 點金石碎片
+    Class "Currency"
+    BaseType "Alchemy Shard"
+
+Show # 通貨碎片 - 混沌石碎片
+    Class "Currency"
+    BaseType "Chaos Shard"
+
+Show # 通貨碎片 - 富豪石碎片
+    Class "Currency"
+    BaseType "Regal Shard"
+
+Show # 通貨碎片 - 崇高石碎片
+    Class "Currency"
+    BaseType "Exalted Shard"
+    SetBorderColor 102 178 255
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+Show # 通貨碎片 - 卡蘭德魔鏡碎片
+    Class "Currency"
+    BaseType "Mirror Shard"
+    SetTextColor 0 0 0
+    SetBackgroundColor 161 0 225
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨碎片 - 無效石碎片
+    Class "Currency"
+    BaseType "Annulment Shard"
+    SetBorderColor 254 254 118
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+Show # 通貨碎片 - 神諭石碎片
+    Class "Currency"
+    BaseType "Harbinger's Shard"
+    SetBorderColor 102 178 255
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+Show # 通貨碎片 - 束縛石碎片
+    Class "Currency"
+    BaseType "Binding Shard"
+    SetBorderColor 170 158 129
+    CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 2 White Circle
+
+Show # 通貨碎片 - 地平石碎片
+    Class "Currency"
+    BaseType "Horizon Shard"
+    SetBorderColor 170 158 129
+    CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 1 White Circle
+
+Show # 通貨碎片 - 工程石碎片
+    Class "Currency"
+    BaseType "Engineer's Shard"
+    CustomAlertSound "Mario_Jump.ogg"
+#	MinimapIcon 2 White Circle
+
+Show # 通貨碎片 - 古變石碎片
+    Class "Currency"
+    BaseType "Ancient Shard"
+    SetBorderColor 170 158 129
+    CustomAlertSound "RO_Cat.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+# Section: [410]精髓
+
+Show # 精髓 - LV7(破空) LV8譫妄 浮誇 錯亂 極恐
+    Class "Currency"
+    BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Deafening Essence of" "Remnant of Corruption"
+    SetBorderColor 221 29 255
+	SetFontSize 40
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+Show # 精髓 - LV6(尖嘯)
+    Class "Currency"
+    BaseType "Shrieking Essence of"
+    SetBorderColor 29 130 255
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+Show # 精髓 - LV5(咆哮)
+    Class "Currency"
+    BaseType "Screaming Essence of"
+    SetBorderColor 27 249 255
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+Show # 精髓 - LV4(哀嚎)
+    Class "Currency"
+    BaseType "Wailing Essence of"
+    SetBorderColor 45 255 27
+#	MinimapIcon 1 Blue Circle
+
+Show # 精髓 - LV3(啼泣)
+    Class "Currency"
+    BaseType "Weeping Essence of"
+    SetBorderColor 253 255 31
+#	MinimapIcon 2 Blue Circle
+
+Show # 精髓 - LV2(呢喃)
+    Class "Currency"
+    BaseType "Muttering Essence of"
+    SetBorderColor 252 145 0
+	
+Show # 精髓 - LV1(低語)
+    Class "Currency"
+    BaseType "Whispering Essence of"
+    SetBorderColor 255 34 34
+	
+
+# Section: [411]獸寓通貨
+
+Show # 通貨 - 獸寓通貨 - 亡靈捕獸網 可以使用在所有等級的野獸屍體
+    Class "Currency"
+    BaseType "Necromancy Net"
+	MinimapIcon 0 Green Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 獸寓通貨 - 幻術捕獸網 68以上
+    Class "Currency"
+    BaseType "Thaumaturgical Net"
+
+Show # 通貨 - 獸寓通貨 - 堅固鋼鐵捕獸網 64以上
+    Class "Currency"
+    BaseType "Strong Steel Net"
+
+Show # 通貨 - 獸寓通貨 - 強化鋼鐵捕獸網 60-75
+    Class "Currency"
+    BaseType "Reinforced Steel Net"
+
+Show # 通貨 - 獸寓通貨 - 簡易鋼鐵捕獸網
+    Class "Currency"
+    BaseType "Simple Steel Net"
+
+Show # 通貨 - 獸寓通貨 - 堅固硬鐵捕獸網
+    Class "Currency"
+    BaseType "Strong Iron Net"
+
+Show # 通貨 - 獸寓通貨 - 強化硬鐵捕獸網
+    Class "Currency"
+    BaseType "Reinforced Iron Net"
+
+Show # 通貨 - 獸寓通貨 - 簡易硬鐵捕獸網
+    Class "Currency"
+    BaseType "Simple Iron Net"
+
+Show # 通貨 - 獸寓通貨 - 堅固套索捕獸網
+    Class "Currency"
+    BaseType "Strong Rope Net"
+
+Show # 通貨 - 獸寓通貨 - 強化套索捕獸網
+    Class "Currency"
+    BaseType "Reinforced Rope Net"
+
+Show # 通貨 - 獸寓通貨 - 簡易套索捕獸網
+    Class "Currency"
+    BaseType "Simple Rope Net"
+	
+# Section: [412]穿越聯盟
+
+Show # 通貨 - 穿越聯盟通貨
+	Class Currency
+	BaseType "Vial of"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 220 0 0 240
+	CustomAlertSound "GoogleT_incursion.ogg"
+	MinimapIcon 0 Green Circle
+	PlayEffect Yellow
+
+# Section: [413]掘獄聯盟
+
+Show # 通貨 - 掘獄聯盟通貨 - 終極混沌鑄新儀 終極煉金鑄新儀 4S
+	Class "Delve Socketable Currency"
+	BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 掘獄聯盟通貨 - 強力混沌鑄新儀 3S
+	Class "Delve Socketable Currency"
+	BaseType "Powerful Chaotic Resonator"
+    SetBorderColor 102 178 255
+	SetFontSize 40
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Green Circle
+	PlayEffect Yellow
+	
+Show # 通貨 - 掘獄聯盟通貨 - 增幅混沌鑄新儀 2S
+	Class "Delve Socketable Currency"
+	BaseType "Potent Chaotic Resonator"
+    SetBorderColor 254 254 118
+	SetFontSize 40
+    CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 0 Green Circle
+	PlayEffect Yellow Temp
+
+Show # 通貨 - 掘獄聯盟通貨 - 原始混沌鑄新儀 1S
+	Class "Delve Socketable Currency"
+	BaseType "Primitive Chaotic Resonator"
+    SetBorderColor 254 254 118
+	SetFontSize 40
+    CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 1 Green Circle
+#	PlayEffect Yellow
+
+Show # 通貨 - 掘獄聯盟通貨 - 強力煉金鑄新儀 3S
+	Class "Delve Socketable Currency"
+	BaseType "Powerful Alchemical Resonator"
+    SetBorderColor 254 254 118
+	SetFontSize 40
+    CustomAlertSound "RO_Cat.ogg"
+	MinimapIcon 0 Green Circle
+	PlayEffect Yellow
+	
+Show # 通貨 - 掘獄聯盟通貨 - 增幅煉金鑄新儀 2S
+	Class "Delve Socketable Currency"
+	BaseType "Potent Alchemical Resonator"
+    SetBorderColor 170 158 129
+	SetFontSize 40
+    CustomAlertSound "Mario_Jump.ogg"
+#	MinimapIcon 2 Green Circle
+	
+Show # 通貨 - 掘獄聯盟通貨 - 原始煉金鑄新儀 1S
+	Class "Delve Socketable Currency"
+	BaseType "Primitive Alchemical Resonator"
+    SetBorderColor 170 158 129
+    CustomAlertSound "Mario_Jump.ogg"
+#	MinimapIcon 2 Green Circle
+
+
+Show # 通貨 - 掘獄聯盟通貨 - T1 化石 (雕琢 分裂 鏤空 雕紋 顫慄)
+	Class Currency
+	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Glyphic Fossil" "Bloodstained Fossil"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 掘獄聯盟通貨 - T2 化石 (血漬 紊亂 鑲金 神聖 透明)
+	Class Currency
+	BaseType "Gilded Fossil" "Sanctified Fossil" "Tangled Fossil" "Dense Fossil"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+#Show # 通貨 - 掘獄聯盟通貨 - T4 化石 (寒風 暴炎 特異)
+#	Class Currency
+#	BaseType "Frigid Fossil" "Scorched Fossil" "Aberrant Fossil"
+#	SetFontSize 45
+#	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
+#	SetBorderColor 0 0 0 200             # BORDERCOLOR:	 Neutral T2
+#	SetBackgroundColor 210 178 135 255   # BACKGROUND:	 Currency T5
+
+Show # 通貨 - 掘獄聯盟通貨 - 其他化石
+	Class Currency
+	BaseType "Fossil"
+	SetBorderColor 102 178 255
+	SetFontSize 40
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+
+	
+	
+
+# Section: [413]戰亂聯盟
+
+Show # 通貨 - 戰亂聯盟通貨 - T1 裂片
+	Class Currency
+	BaseType "Timeless Maraketh Splinter"
+	SetFontSize 40
+	SetBorderColor 27 249 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 通貨 - 戰亂聯盟通貨 - T2 裂片
+	Class Currency
+	BaseType "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	SetFontSize 40
+	SetBorderColor 27 249 255
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 通貨 - 戰亂聯盟通貨 - 培育器
+	Class Incubator
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 42
+    CustomAlertSound "GoogleT_legion.ogg"
+	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+
+	
+# Section: [499]通貨安全線
+
+Show # 通貨安全線
+    Class "Currency"
+
+	
+	
+	
+	
+	
+	
+# Section: [501]技能石
+
+Show # 技能石 - 賦予
+    Class "Gem"
+    BaseType "Empower"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+Show # 技能石 - 啟蒙
+    Class "Gem"
+    BaseType "Enlighten"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+
+Show # 技能石 - 增幅
+    Class "Gem"
+    BaseType "Enhance"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+
+Show # 技能石 - 物品數量增幅
+    Class "Gem"
+    BaseType "Item Quantity"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+Show # 技能石 - Q20
+    Quality >= 20
+    Class "Gem"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+Show # 技能石 - 瓦爾迅捷 瓦爾紀律 瓦爾裂痕 瓦爾正義之火 瓦爾飛刃風暴 瓦爾雙重打擊 瓦爾優雅 瓦爾電弧
+    Class "Gems"
+    BaseType "Vaal Haste" "Vaal Discipline" "Vaal Breach" "Vaal Righteous Fire" "Vaal Blade Vortex" "Vaal Double Strike" "Vaal Grace" "Vaal Arc"
+    SetBorderColor 102 178 255
+
+#Show # 技能石 - 附加混沌傷害
+#    Class "Gem"
+#    BaseType "Added Chaos Damage"
+#	SetFontSize 38
+#    SetBorderColor 102 178 255
+#	MinimapIcon 2 Green Triangle
+#	PlayEffect Green
+
+#Show # 技能石 - 搖控地雷
+#    Class "Gem"
+#    BaseType "Detonate Mines"
+#	SetFontSize 38
+#    SetBorderColor 102 178 255
+#	MinimapIcon 2 Green Triangle
+#	PlayEffect Green
+
+Show # 技能石 - 時空之門
+    Class "Gem"
+    BaseType "Portal"
+	SetFontSize 38
+    SetBorderColor 102 178 255
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+Show # 技能石 - Q>=15
+    Quality >= 15
+    Class "Gems"
+    SetBorderColor 102 178 255
+    CustomAlertSound "HearthStone_Rare.ogg"
+	MinimapIcon 1 White Circle
+	PlayEffect Yellow
+	
+Show # 技能石 - Q>=10
+    Quality >= 10
+    Class "Gems"
+    SetBorderColor 102 178 255
+    CustomAlertSound "HearthStone_Rare.ogg"
+	MinimapIcon 1 White Circle
+	PlayEffect Yellow
+
+Show # 技能石 - Q>=5
+    Quality >= 5
+    Class "Gems"
+    SetBorderColor 102 178 255
+	
+Show # 技能石 - 瓦爾系列
+    Class "Gem"
+    BaseType "Vaal"
+
+Show # 技能石 - 其他
+    Class "Gem"
+
+	
+	
+	
+	
+	
+	
+# Section: [1000]傳奇 - 無盡之衣(白袍)
+
+Show # 傳奇 - 無盡之衣(白袍)
+    SocketGroup "WWWWWW"
+    Rarity = Unique
+    BaseType "Simple Robe"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetBorderColor 175 96 37
+    SetFontSize 45
+    CustomAlertSound "LOL_Legendary.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+# Section: [1001]六連裝備(6L)
+
+Show # 六連裝備(6L) 未汙染
+	Corrupted False
+    LinkedSockets = 6
+    Rarity <= Unique
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 White Star
+	PlayEffect Yellow
+	
+Show # 六連裝備(6L) 已汙染 可換神聖石
+    LinkedSockets = 6
+    Rarity <= Unique
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 White Star
+	PlayEffect Yellow
+
+# Section[1002]尊者化(塑界)化物品
+
+Show # 尊者物品 - 物等85以上尊者物品
+    ElderItem True
+    ItemLevel >= 85
+    Rarity <= Rare
+    SetBackgroundColor 225 128 225
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "GoogleT_elder85.ogg"
+	MinimapIcon 0 Red Star
+	PlayEffect Green
+
+Show # 尊者物品 - 物等84以下尊者物品
+    ElderItem True
+    Rarity <= Rare
+    SetBackgroundColor 225 128 225
+    SetBorderColor 161 0 225
+    SetFontSize 45
+	MinimapIcon 0 Red Star
+	PlayEffect Green
+
+Show # 塑者物品 - 物等85以上塑者物品
+    ShaperItem True
+    ItemLevel >= 85
+    Rarity <= Rare
+    SetBackgroundColor 128 225 225
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "GoogleT_shaper85.ogg"
+	MinimapIcon 0 Blue Star
+	PlayEffect Green
+
+Show # 塑者物品 - 物等84以下塑者物品
+    ShaperItem True
+    Rarity <= Rare
+    SetBackgroundColor 128 225 225
+    SetFontSize 45
+	MinimapIcon 0 Blue Star
+	PlayEffect Green
+
+# Section: [1003]神諭聯盟裝備碎片
+
+Show # 神諭聯盟裝備碎片
+    Class "Piece"
+    SetTextColor 255 255 255 # TEXTCOLOR: Normal Items: Strong Highlight
+    SetBackgroundColor 37 105 175 # BACKGROUND: Harbinger Item - Pieces
+    SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Highlight good drops
+    SetFontSize 45
+    CustomAlertSound "GoogleT_harbinger.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+# Section: [1004]傳奇 - T1傳奇
+ 
+Show # 傳奇 - 六連傳奇
+    LinkedSockets = 6
+    Rarity = Unique
+    SetTextColor 255 255 255
+    SetBackgroundColor 175 96 37 # TEXTCOLOR: Uniques
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "LOL_Legendary.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # 傳奇 - T1傳奇 
+	Rarity = Unique
+	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Mantle" "Golden Wreath" "Grand Mana Flask" "Greatwolf Talisman" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nubuck Boots" "Occultist's Vestment" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
+    SetTextColor 255 255 255
+    SetBackgroundColor 175 96 37 # TEXTCOLOR: Uniques
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "LOL_Legendary.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+# Section: [1005]傳奇 - T2傳奇 
+
+Show # 傳奇 - 五連傳奇
+    LinkedSockets = 5
+    Rarity = Unique
+    SetTextColor 0 0 0 # TEXTCOLOR: Black
+    SetBackgroundColor 175 96 37
+    SetFontSize 45
+    CustomAlertSound "LOL_GodLike.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # 傳奇 - T2傳奇 - 
+	Rarity = Unique
+	BaseType "Abyssal Axe" "Ancient Gauntlets" "Assassin's Boots" "Bismuth Flask" "Carnal Sceptre" "Champion Kite Shield" "Clasped Mitts" "Coiled Staff" "Corsair Sword" "Destiny Leather" "Ezomyte Burgonet" "Full Wyrmscale" "Granite Flask" "Hellion's Paw" "Imperial Claw" "Iron Sceptre" "Jasper Chopper" "Midnight Blade" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Ritual Sceptre" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Serpentscale Gauntlets" "Siege Axe" "Sorcerer Gloves" "Steelwood Bow" "Two-Stone Ring" "Vaal Axe" "Vaal Mask" "Vaal Rapier" "Vaal Sceptre" "Vaal Spirit Shield" "Varnished Coat" "Void Axe"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 45
+    CustomAlertSound "LOL_GodLike.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # 傳奇 - T2傳奇 - 同基底傳奇
+	Rarity = Unique
+	BaseType "Blood Raiment" "Coral Amulet" "Ebony Tower Shield" "Ezomyte Staff" "Fiend Dagger" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Iron Ring" "Judgement Staff" "Magistrate Crown" "Onyx Amulet" "Sadist Garb" "Sage Wand" "Stibnite Flask" "Studded Belt"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 42
+    CustomAlertSound "LOL_GodLike.ogg"
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown
+	
+Show # 傳奇 - T2傳奇 - 同基底傳奇(聯盟)
+	Rarity = Unique
+	BaseType "Agate Amulet" "Amber Amulet" "Hubris Circlet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Silver Flask" "Topaz Ring" "Unset Ring"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 42
+    CustomAlertSound "LOL_GodLike.ogg"
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown
+	
+Show # 傳奇 - T2.5傳奇
+	Rarity = Unique
+	BaseType "Assassin Bow" "Bronzescale Boots" "Deerskin Gloves" "Ezomyte Blade" "Holy Chainmail" "Imperial Skean" "Karui Maul" "Opal Wand" "Silk Gloves" "Soldier Helmet" "Sulphur Flask" "Timeworn Claw" "Titanium Spirit Shield" "Vaal Blade" "War Hammer"
+    SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 42
+	CustomAlertSound "LOL_Dominating.ogg"
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown
+
+Show # 傳奇 - 珠寶
+	Rarity = Unique
+	BaseType "Viridian Jewel" "Cobalt Jewel" "Crimson Jewel"
+	SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 42
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown
+	
+Show # 傳奇 - 戒指
+	Rarity Unique
+	Class "Rings"
+	SetTextColor 0 0 0
+    SetBackgroundColor 175 96 37
+    SetFontSize 42
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown	
+	
+# Section: [1006]傳奇 - 預言傳奇
+
+Show # 傳奇 - 預言傳奇
+	Rarity = Unique
+	BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+    SetTextColor 175 96 37
+    SetBorderColor 100 37 255 200 # BORDERCOLOR: Cosmetic: Fated Uniques
+	MinimapIcon 1 Blue Star
+
+# Section: [1007]傳奇 - 其他傳奇
+
+Show # 傳奇 - 其他傳奇
+    Rarity = Unique
+    SetTextColor 175 96 37
+	MinimapIcon 2 Brown Star
+
+# Section: [1008]五連裝備(5L)，因為過濾器語法關係，如果取消不勾會影響之後裝備的顯示，建議顯示
+
+Show # 五連裝備(5L)
+    LinkedSockets = 5
+    Rarity <= Unique
+    SetBorderColor 200 200 200
+	SetFontSize 40
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 2 White Star
+	PlayEffect Brown
+	
+Show # 四連裝備(4L) 拓荒用
+    LinkedSockets = 4
+	Rarity <= Unique
+    SetBorderColor 200 200 200
+	SetFontSize 40
+    CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 2 White Star
+	PlayEffect Brown
+	
+# Section: [1009]六洞裝備(6S) 可換七個工匠石，因為過濾器語法關係，如果取消不勾會影響之後裝備的顯示，建議顯示
+
+Show # 六洞裝備(6S) 可換七個工匠石
+    Sockets = 6
+    SetBorderColor 102 178 255
+	SetFontSize 40
+    CustomAlertSound "RO_RefineSuccess.ogg"
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow
+	
+	
+	
+	
+# Section: [1010]點機會石的基底
+
+Hide # 點機會石的基底 - 術士長靴(空向)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Sorcerer Boots"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 皮革腰帶(獵首)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Leather Belt"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 簡易之袍(白袍)(拓荒)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Simple Robe"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 秘術長衣(薛朗的護身長袍)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Occultist's Vestment"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 榮耀戰鎧(專家岡姆的壯志)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Glorious Plate"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 箴言法杖(潛能魔棒)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Prophecy Wand"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 烏木塔盾(五芒屏障/圖克哈瑪堡壘)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Ebony Tower Shield"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 連身龍鱗戰甲(獸腹)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Full Wyrmscale"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 生皮塔盾(狼蛛)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Rawhide Tower Shield"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 帝金護身符(烈陽徽記/冬之心/畢斯寇的項圈)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Gold Amulet"
+    SetBorderColor 200 200 200
+
+Hide # 點機會石的基底 - 粗紋法杖(學富之筆/禁錮暴風)
+    Corrupted False
+    Rarity = Normal
+    BaseType "Carved Wand"
+    SetBorderColor 200 200 200
+
+Show # 點機會石的基底 - 祭禮束衣(阿茲里的威權)
+    Rarity <= Rare
+    BaseType "Sacrificial Garb"
+    SetFontSize 40
+    SetBorderColor 200 200 200
+
+
+	
+	
+	
+	
+	
+	
+# Section: [1011]穿越聯盟詞綴裝備
+
+Show # 穿越聯盟詞綴裝備
+	Identified True
+	HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Topotante" "Xopec" "Guatelitzi" "Puhuarte"
+	SetFontSize 45
+	SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_incursion.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green	
+	
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+# Section: [1013]深淵腰帶
+
+Show # 深淵腰帶 - 物等86以上 深淵腰帶
+    ItemLevel >= 86
+    BaseType "Stygian Vise"
+    SetBackgroundColor 128 64 40
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "GoogleT_abyss.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 深淵腰帶 - 物等75以上 深淵腰帶
+    ItemLevel >= 75
+    BaseType "Stygian Vise"
+    SetBackgroundColor 128 64 40
+    SetBorderColor 102 178 255
+    SetFontSize 45
+    CustomAlertSound "GoogleT_abyss.ogg"
+	MinimapIcon 1 Green Star
+	PlayEffect Green
+
+Show # 深淵腰帶 - 物等60以上 深淵腰帶
+    ItemLevel >= 60
+    BaseType "Stygian Vise"
+    SetBackgroundColor 128 64 40
+    SetBorderColor 254 254 118
+    SetFontSize 45
+    CustomAlertSound "GoogleT_abyss.ogg"
+	MinimapIcon 2 Green Star
+	PlayEffect Green
+	
+	
+	
+	
+	
+	
+	
+# Section: [1014]粗製弓(火靈用)
+
+Hide # 粗製弓 - 物等84以上(火靈用)
+    ItemLevel >= 85
+    Rarity <= Rare
+    BaseType "Crude Bow"
+    SetBorderColor 161 0 225
+
+Hide # 粗製弓 - 物等50以上(火靈用)
+    ItemLevel >= 50
+    Rarity <= Rare
+    BaseType "Crude Bow"
+    SetBorderColor 25 235 25
+
+	
+	
+	
+	
+	
+	
+	
+# Section: [1015]掘獄聯盟詞綴裝備
+
+Show # Delve Mod Items - Poor %D3
+	Identified True
+	HasExplicitMod "of Crafting" "of Spellcraft" "of Weaponcraft"
+	SetFontSize 45
+	SetBorderColor 220 0 0 240
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # Delve Mod Items - Expensive
+	Identified True
+	HasExplicitMod "of the Underground" "Subterranean"
+	SetFontSize 45
+	SetBorderColor 220 0 0 240
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+	
+	
+	
+
+	
+	
+# Section: [1016]背叛聯盟詞綴裝備
+
+Show # 通貨 - 背叛聯盟通貨 - Veil
+	Identified True
+	HasExplicitMod "Veil"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_betrayal.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 通貨 - 背叛聯盟通貨 - Veil 安全線
+	HasExplicitMod "Veil"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_betrayal.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+	
+	
+	
+	
+# Section: [1017]追憶聯盟詞綴裝備
+
+Show # Synthesis Mod Items - Fractured Item
+	FracturedItem True
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_synthesis.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # Synthesis Mod Items - Synthesised Item
+	SynthesisedItem True
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_synthesis.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+# Section: [1028]異界輿圖新基底
+
+Show # 異界輿圖新基底 - 物等86以上 水晶腰帶
+    ItemLevel >= 86
+    BaseType "Crystal Belt"
+    SetBackgroundColor 128 225 128
+    SetBorderColor 161 0 225
+    SetFontSize 40
+    CustomAlertSound "HearthStone_Epic.ogg"
+	MinimapIcon 0 Yellow Star
+	PlayEffect Green
+
+Show # 異界輿圖新基底 - 物等85以上 鋼鑄戒指 蛋白石戒指
+    ItemLevel >= 85
+    BaseType "Steel Ring" "Opal Ring"
+    SetBackgroundColor 128 225 128
+    SetBorderColor 161 0 225
+    SetFontSize 40
+    CustomAlertSound "HearthStone_Epic.ogg"
+	MinimapIcon 0 Yellow Star
+	PlayEffect Green
+
+Show # 異界輿圖新基底 - 物等86以上 先鋒腰帶 喚骨頭盔 異色鞋 理石護身符 碧珠護身符
+    ItemLevel >= 86
+    BaseType "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Marble Amulet" "Blue Pearl Amulet"
+    SetBackgroundColor 128 225 128 128
+    SetBorderColor 161 0 225
+    SetFontSize 40
+	MinimapIcon 0 Yellow Star
+	PlayEffect Green
+	
+Show # 異界輿圖新基底 - 物等85以上 魔指手套 釦釘手套 擒拿手套
+    ItemLevel >= 85
+    BaseType "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves"
+    SetBackgroundColor 128 225 128 128
+    SetBorderColor 161 0 225
+    SetFontSize 40
+	MinimapIcon 0 Yellow Star
+	PlayEffect Green
+
+Show # 異界輿圖新基底 - 物等75以上 鋼鑄戒指 蛋白石戒指 水晶腰帶
+    ItemLevel >= 75
+    BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
+    SetBackgroundColor 128 225 128
+    SetBorderColor 102 178 255
+    SetFontSize 40
+    CustomAlertSound "HearthStone_Epic.ogg"
+	MinimapIcon 1 Yellow Star
+	PlayEffect Green
+
+Show # 異界輿圖新基底 - 物等75以上 先鋒腰帶 喚骨頭盔 魔指手套 釦釘手套 擒拿手套 異色鞋 理石護身符 碧珠護身符
+    ItemLevel >= 75
+    BaseType "Vanguard Belt" "Bone Helmet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Two-Toned Boots" "Marble Amulet" "Blue Pearl Amulet"
+    SetBackgroundColor 128 225 128 128
+    SetBorderColor 102 178 255
+
+Show # 異界輿圖新基底 - 物等60以上 鋼鑄戒指 蛋白石戒指 水晶腰帶
+    ItemLevel >= 60
+    BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
+    SetBackgroundColor 128 225 128
+    SetBorderColor 254 254 118
+    SetFontSize 40
+    CustomAlertSound "HearthStone_Epic.ogg"
+
+Show # 異界輿圖新基底 - 物等60以上 先鋒腰帶 喚骨頭盔 魔指手套 釦釘手套 擒拿手套 異色鞋 理石護身符 碧珠護身符
+    ItemLevel >= 60
+    BaseType "Vanguard Belt" "Bone Helmet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Two-Toned Boots" "Marble Amulet" "Blue Pearl Amulet"
+    SetBackgroundColor 128 225 128 128
+    SetBorderColor 254 254 118
+	
+	
+	
+	
+	
+	
+	
+	
+	
+# Section: [1029]自訂白裝基底(點精髓用)
+
+#Show # 自訂白裝基底(點精髓用)
+#    Rarity = Normal
+#    BaseType "Opal Wand"
+
+Show # 穿越聯盟手工尊師塑界基底
+    ItemLevel >= 86
+    Rarity <= Rare
+    Class "Amulets"
+	SetFontSize 40
+    SetBorderColor 161 0 225
+
+
+
+
+	
+	
+	
+
+# Section: [1030] 稀有裝備
+
+Show # 稀有裝備 - 物等86以上稀有裝備(可全T1詞綴) 腰帶 護身符
+    ItemLevel >= 86
+    Rarity = Rare
+    Class "Belts" "Amulets"
+	SetFontSize 40
+    SetBorderColor 161 0 225
+	
+Show # 稀有裝備 - 物等86以上稀有裝備(可全T1詞綴) 衣服 鞋子 盾牌 箭袋
+    ItemLevel >= 86
+    Rarity = Rare
+    Class "Helmets" "Body Armours" "Boots" "Shields" "Quivers"
+    SetBorderColor 161 0 225
+
+Show # 稀有裝備 - 物等85以上稀有裝備(可全T1詞綴) 戒指
+    ItemLevel >= 85
+    Rarity = Rare
+    Class "Rings"
+	SetFontSize 40
+    SetBorderColor 161 0 225
+	
+Show # 稀有裝備 - 物等85以上稀有裝備(可全T1詞綴) 弓 長杖 雙手劍 雙手斧 雙手錘 匕首 單手劍 單手斧 單手錘 權杖 法杖 爪 細劍 手套
+    ItemLevel >= 85
+    Rarity = Rare
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Gloves"
+    SetBorderColor 161 0 225
+	
+Show # 稀有裝備 - 物等75以上稀有裝備(富豪石) 飾品
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Belts" "Amulets" "Rings"
+	SetFontSize 40
+    SetBorderColor 102 178 255
+	
+Show # 稀有裝備 - 物等75以上稀有裝備(富豪石) 非飾品
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers"
+    SetBorderColor 102 178 255
+
+Show # 稀有裝備 - 物等60以上稀有裝備(混沌石) 飾品
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Belts" "Amulets" "Rings"
+	SetFontSize 40
+    SetBorderColor 254 254 118
+	
+Show # 稀有裝備 - 物等60以上稀有裝備(混沌石) 非飾品
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
+    SetBorderColor 254 254 118
+
+Show # 稀有裝備 - 物等60未滿稀有裝備(機會石)
+    Rarity = Rare
+    Class "Belts" "Amulets" "Rings"
+	SetFontSize 40
+	
+Show # 稀有裝備 - 物等60未滿稀有裝備(機會石)
+    Rarity = Rare
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
+
+#Show # 稀有裝備商店配方 - 物等75以上白腰帶(有需要可點金)
+#    ItemLevel >= 75
+#    Rarity = Normal
+#    Class "Belts"
+#    SetTextColor 100 100 100
+#    SetBorderColor 102 178 255
+#    SetFontSize 30
+
+#Show # 稀有裝備商店配方 - 物等75以上白項鍊(有需要可點金)
+#    ItemLevel >= 75
+#    Rarity = Normal
+#    Class "Amulets"
+#    SetTextColor 100 100 100
+#    SetBorderColor 102 178 255
+#    SetFontSize 30
+
+#Show # 稀有裝備商店配方 - 物等75以上白戒指(有需要可點金)
+#    ItemLevel >= 75
+#    Rarity = Normal
+#    Class "Rings"
+#    SetTextColor 100 100 100
+#    SetBorderColor 102 178 255
+#    SetFontSize 30
+
+#Show # 稀有裝備商店配方 - 物等60以上白腰帶(有需要可點金)
+#    ItemLevel >= 60
+#    Rarity = Normal
+#    Class "Belts"
+#    SetTextColor 100 100 100
+#    SetBorderColor 254 254 118
+#    SetFontSize 30
+
+#Show # 稀有裝備商店配方 - 物等60以上白項鍊(有需要可點金)
+#    ItemLevel >= 60
+#    Rarity = Normal
+#    Class "Amulets"
+#    SetTextColor 100 100 100
+#    SetBorderColor 254 254 118
+#    SetFontSize 30
+
+#Show # 稀有裝備商店配方 - 物等60以上白戒指(有需要可點金)
+#    ItemLevel >= 60
+#    Rarity = Normal
+#    Class "Rings"
+#    SetTextColor 100 100 100
+#    SetBorderColor 254 254 118
+#    SetFontSize 30
+
+
+
+
+
+
+
+# Section: [1035]商店配方
+
+Hide # 商店配方 - 換幻色石的裝備 - 4 X 2 裝備
+    SocketGroup "RGB"
+    Height = 4
+    Width = 2
+    SetBorderColor 170 158 129
+
+Hide # 商店配方 - 換幻色石的裝備 - 4 X 1 裝備
+    SocketGroup "RGB"
+    Height = 4
+    Width = 1
+    SetBorderColor 170 158 129
+
+Hide # 商店配方 - 換幻色石的裝備 - 3 X 2 裝備
+    SocketGroup "RGB"
+    Height = 3
+    Width = 2
+    SetBorderColor 170 158 129
+
+Show # 商店配方 - 換幻色石的裝備 - 2 X 2 裝備
+    SocketGroup "RGB"
+    Height = 2
+    Width = 2
+    SetBorderColor 170 158 129
+
+Show # 商店配方 - 換幻色石的裝備 - 3 X 1 裝備
+    SocketGroup "RGB"
+    Height = 3
+    Width = 1
+    SetBorderColor 170 158 129
+
+Show # 商店配方 - 換製圖釘的 石錘 破岩錘 堅錘 Q>=20
+    Quality >= 20
+    Rarity <= Unique
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    SetBorderColor 170 158 129
+
+Show # 商店配方 - 換製圖釘的 石錘 破岩錘 堅錘 Q>=10
+    Quality >= 10
+    Rarity = Normal
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    SetBorderColor 170 158 129
+
+Show # 商店配方 - 換製圖釘的 石錘 破岩錘 堅錘 Q>=0
+    Rarity = Normal
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    SetBorderColor 170 158 129
+
+Hide # 商店配方 - 魔法素布腰帶(稀有武器洗回魔法材料)
+    Rarity = Magic
+    BaseType "Rustic Sash"
+
+Show # 戒指轉項鍊材料
+	BaseType "Iron Ring"
+	Rarity <= Rare
+	SetBorderColor 255 255 255
+	
+	
+	
+	
+	
+# Section: [1037]其他所有魔法及普通裝備(普通魔法武防飾品安全線-白藍垃圾)
+
+Show # 魔法裝備(白藍垃圾)
+	Rarity = Magic
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
+
+Show # 普通裝備(白藍垃圾)
+	Rarity = Normal
+    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
+
+	
+	
+	
+	
+	
+# Section: [2001]藥劑
+
+Show # 藥劑 - Q20
+    Quality = 20
+    Rarity <= Magic
+    BaseType "Flask"
+    SetBorderColor 170 158 129
+	MinimapIcon 2 White Circle
+
+Show # 藥劑 - Q>=14
+    Quality >= 14
+    Rarity <= Magic
+    BaseType "Flask"
+    SetBorderColor 170 158 129
+
+Show # 藥劑 - 生命藥劑
+    Rarity <= Magic
+    BaseType "Life Flask"
+
+Show # 藥劑 - 複合藥劑
+    Rarity <= Magic
+    BaseType "Hybrid Flask"
+
+Show # 藥劑 - 魔力藥劑
+    Rarity <= Magic
+    BaseType "Mana Flask"
+
+Show # 藥劑 - 功能藥劑
+    Rarity <= Magic
+    BaseType "Quicksilver Flask" "Bismuth Flask" "Stibnite Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Amethyst Flask" "Silver Flask" "Diamond Flask" "Granite Flask" "Quartz Flask" "Jade Flask" "Aquamarine Flask" "Sulphur Flask" "Basalt Flask"
+
+Hide # 藥劑 - Q>=10
+    Quality >= 10
+    Rarity <= Magic
+    BaseType "Flask"
+    SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Neutral Highlight
+    SetFontSize 33
+
+Hide # 藥劑 - Q>=0
+    Rarity <= Magic
+    BaseType "Flask"
+    SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Neutral Highlight
+    SetFontSize 30
+
+Hide # 藥劑 - Q>=0
+    Rarity <= Magic
+    Class "Flask"
+    SetBackgroundColor 0 0 0 0
+    SetFontSize 11
+
+	
+	
+	
+	
+	
+# Section: [3001]深淵珠寶
+
+Show # 深淵珠寶 - 物等84以上 深淵珠寶
+    ItemLevel >= 84
+    Class "Abyss Jewel"
+    SetBackgroundColor 128 64 40
+    SetBorderColor 161 0 225
+    SetFontSize 45
+    CustomAlertSound "GoogleT_abyss.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # 深淵珠寶 - 深淵珠寶
+    Class "Abyss Jewel"
+    SetBackgroundColor 128 64 40
+    SetFontSize 42
+    CustomAlertSound "GoogleT_abyss.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+
+
+
+    
+# Section: [3002]天賦珠寶
+
+Show # 天賦珠寶 - 稀有 - 赤紅
+    BaseType "Crimson Jewel"
+    SetBorderColor 150 0 0
+
+Show # 天賦珠寶 - 稀有 - 翠綠
+    BaseType "Viridian Jewel"
+    SetBorderColor 0 128 0
+
+Show # 天賦珠寶 - 稀有 - 鈷藍
+    BaseType "Cobalt Jewel"
+    SetBorderColor 30 144 255
+
+Show # 天賦珠寶 - 稀有 - 三相
+    BaseType "Prismatic Jewel"
+    SetBorderColor 255 255 255
+
+
+
+
+
+	
+# Section: [9001]安全線！
+
+Show # 安全線！怕有些東西沒寫到或改版新增的，讓它顯示出來，樣式是紫色字體+框
+    SetTextColor 255 0 255
+    SetBorderColor 255 0 255
+    SetFontSize 45
+
