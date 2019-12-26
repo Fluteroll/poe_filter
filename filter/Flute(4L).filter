@@ -65,6 +65,7 @@
 # Section[307]特殊物品 - 聯盟石
 # Section[308]特殊物品 - 古典遺鑰
 # Section[310]特殊物品 - 穿越聯盟
+# Section[311]特殊物品 - 鍊魔聯盟
 # Section[398]特殊物品 - 任務道具
 # Section[399]特殊物品 - 魚竿
 #
@@ -85,6 +86,7 @@
 # Section[412]穿越聯盟
 # Section[413]掘獄聯盟
 # Section[414]戰亂聯盟
+# Section[415]鍊魔聯盟
 # Section[499]通貨安全線
 #
 # 技能石
@@ -422,14 +424,14 @@ Show # 凋落地圖 - 未滿T15
 # 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
 Show # 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
     Class "Divination"
-	BaseType "The Wolf's Shadow" "The Master Artisan"
+	BaseType "The Demoness" "The Wolf's Legacy" "The Wolf's Shadow" "The Master Artisan"
     SetTextColor 122 178 255
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
 Show # 命運卡 - T1 
 	Class "Divination"
-	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride of the First Ones" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "The Damned" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Iron Bard" "The Nurse" "The Price of Loyalty" "The Samurai's Eye" "The Spark and the Flame" "Etched in Blood" "Succor of the Sinless" "The World Eater" "The Craving" "The Dragon's Heart" "Wealth and Power" "Burning Blood"
     SetTextColor 0 0 0 
 	SetBackgroundColor 122 178 255
     SetBorderColor 161 0 225
@@ -440,7 +442,7 @@ Show # 命運卡 - T1
 	
 Show # 命運卡 - T2 
     Class "Divination"
-	BaseType "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Pride Before the Fall" "The Cartographer" "The Deep Ones" "The Landing" "The Professor" "The Queen" "The Seeker" "The Sephirot" "The Soul" "The Undaunted" "The Void"
+	BaseType "Chaotic Disposition" "The Cartographer" "The Eye of Terror" "Pride Before the Fall" "The Polymath" "The Queen" "The Saint's Treasure" "The Void" "The Wolven King's Bite" "The Celestial Stone" "The Offering" "The Enlightened" "The Celestial Justicar" "The Ethereal" "The Escape" "The King's Heart" "Dark Dreams" "The Sacrifice"
     SetTextColor 122 178 255
     SetBorderColor 161 0 225
     SetFontSize 42
@@ -452,7 +454,7 @@ Show # 命運卡 - T2
 
 Show # 命運卡 - T3 
     Class "Divination"
-	BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Boon of the First Ones" "Bowyer's Dream" "Demigod's Wager" "Echoes of Love" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Lucky Deck" "Merciless Armament" "Monochrome" "No Traces" "Perfection" "Rebirth" "Sambodhi's Vow" "The Artist" "The Breach" "The Brittle Emperor" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Ethereal" "The Hale Heart" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Master" "The Offering" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The World Eater" "Time-Lost Relic" "Vanity"
+	BaseType "The Life Thief" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Azyran's Reward" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Lucky Deck" "Perfection" "Remembrance" "The Artist" "The Brittle Emperor" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Endless Darkness" "The Bargain" "The Hoarder" "The Jeweller's Boon" "The Mayor" "The Last One Standing" "Squandered Prosperity" "Void of the Elements" "The Landing" "The Porcupine" "The Price of Protection" "Mawr Blaidd" "The Risk" "The Soul" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Undaunted" "Vanity" "The Professor" "The Wolf" "Left to Fate" "The Primordial" "The Heroic Shot" "The Pact" "The Sephirot" "The Fishmonger" "Underground Forest" "The Scavenger" "Divine Justice" "The Realm" "The Breach" "The Old Man"
     SetTextColor 122 178 255
     SetBorderColor 102 178 255
     CustomAlertSound "LOL_Aced.ogg"
@@ -463,8 +465,17 @@ Show # 命運卡 - T3
 
 Show # 命運卡 - T4 
     Class "Divination"
-	BaseType "Rain of Chaos" "Boon of Justice" "Coveted Possession" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Loyalty" "Lucky Connections" "The Cacophony" "The Catalyst" "The Fool" "The Gemcutter" "The Innocent" "The Puzzle" "The Scholar" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
+	BaseType "Boon of Justice" "Coveted Possession" "Demigod's Wager" "Emperor's Luck" "Harmony of Souls" "Her Mask" "Imperial Legacy" "Loyalty" "Lucky Connections" "Monochrome" "More is Never Enough" "No Traces" "Sambodhi's Vow" "The Cacophony" "The Catalyst" "The Deal" "The Flora's Gift" "The Fool" "The Gemcutter" "The Innocent" "The Inventor" "The Puzzle" "The Side Quest" "The Survivalist" "The Union" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vinia's Token" "The Seeker" "Buried Treasure" "The Journey"
     SetTextColor 122 178 255
+    SetBorderColor 170 158 129
+    CustomAlertSound "DOMO_mid.ogg"
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Show # 命運卡 - T4.5 
+    Class "Divination"
+	BaseType "Rain of Chaos" "The Scholar"
+	SetTextColor 122 178 255
     SetBorderColor 170 158 129
     CustomAlertSound "DOMO_mid.ogg"
 	MinimapIcon 0 Blue Square
@@ -472,9 +483,9 @@ Show # 命運卡 - T4
 
 # Section: [204]T5命運卡
 
-Show # 命運卡 - T5 
+Show # 命運卡 - T5 - 雜卡 - 想隱藏的話可以隱藏這個
     Class "Divination"
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Dark Temptation" "Destined to Crumble" "Dying Anguish" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Coming Storm" "The Drunken Aristocrat" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Scarred Meadow" "The Summoner" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Volatile Power"
+	BaseType "A Mother's Parting Gift" "Audacity" "Birth of the Three" "The Surgeon" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Twins" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Cartographer's Delight" "Tranquillity" "The Calling" "The Deceiver" "Anarchy's Price" "Grave Knowledge" "The Opulent" "Thirst for Knowledge"
     SetTextColor 122 178 255
 
 # Section: [205]其他命運卡
@@ -604,6 +615,34 @@ Show # 特殊物品 - 穿越聯盟物品
 	SetFontSize 45
     SetBorderColor 220 0 0 240
 	CustomAlertSound "GoogleT_incursion.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+	
+# Section: [311]特殊物品 - 鍊魔聯盟
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 80lv以上
+	ItemLevel >= 80
+	Class "Metamorph"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 稀有器官
+	Class "Metamorph"
+	BaseType "Liver" "Eye"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 其他
+	Class "Metamorph"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
@@ -1064,7 +1103,7 @@ Show # 通貨 - 掘獄聯盟通貨 - 其他化石
 	
 	
 
-# Section: [413]戰亂聯盟
+# Section: [414]戰亂聯盟
 
 Show # 通貨 - 戰亂聯盟通貨 - T1 裂片
 	Class Currency
@@ -1090,6 +1129,40 @@ Show # 通貨 - 戰亂聯盟通貨 - 培育器
     SetFontSize 42
     CustomAlertSound "GoogleT_legion.ogg"
 	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+
+
+
+
+# Section: [415]鍊魔聯盟
+
+#Show # 通貨 - 鍊魔聯盟通貨 - T1 催化劑
+#	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+#	SetTextColor 0 0 0
+#	SetBackgroundColor 102 178 255
+#	SetBorderColor 170 158 129
+#	SetFontSize 45
+#	CustomAlertSound "Mario_Timesup.ogg"
+#	MinimapIcon 0 Red Circle
+#	PlayEffect Yellow
+
+#Show # 通貨 - 鍊魔聯盟通貨 - T2 催化劑
+#	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+#	SetTextColor 0 0 0
+#	SetBackgroundColor 102 178 255
+#	SetBorderColor 170 158 129
+#	SetFontSize 45
+#	CustomAlertSound "Mario_1up.ogg"
+#	MinimapIcon 0 Red Circle
+#	PlayEffect Yellow
+
+Show # 通貨 - 鍊魔聯盟通貨 - T3 催化劑
+	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow
 
 
@@ -1324,66 +1397,66 @@ Show # 傳奇 - 六連傳奇
 
 Show # 傳奇 - T1傳奇 
 	Rarity = Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Clutching Talisman" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Mantle" "Golden Wreath" "Grand Mana Flask" "Greatwolf Talisman" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nubuck Boots" "Occultist's Vestment" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Riveted Gloves" "Rotfeather Talisman" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Wereclaw Talisman" "Wyrmscale Doublet" "Zodiac Leather"
-    SetTextColor 255 255 255
-    SetBackgroundColor 175 96 37 # TEXTCOLOR: Uniques
-    SetBorderColor 102 178 255
-    SetFontSize 45
-    CustomAlertSound "LOL_Legendary.ogg"
+	BaseType "Ambush Mitts" "Riveted Gloves" "Arcanist Slippers" "Carnal Boots" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Jewelled Foil" "Jingling Spirit Shield" "Nubuck Boots" "Nightmare Mace" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Saint's Hauberk" "Siege Axe" "Silk Gloves" "Two-Stone Ring" "Timeless Jewel" "Steel Ring" "Zodiac Leather" "Sapphire Flask" "Vaal Rapier" "Royal Axe" "Blood Raiment" "Highborn Staff" "Steelwood Bow" "Ruby Flask" "Gladiator Plate" "Lion Pelt" "Varnished Coat"
+	SetTextColor 255 255 255
+	SetBackgroundColor 175 96 37 # TEXTCOLOR: Uniques
+	SetBorderColor 102 178 255
+	SetFontSize 45
+	CustomAlertSound "LOL_Legendary.ogg"
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
 # Section: [1005]傳奇 - T2傳奇 
 
 Show # 傳奇 - 五連傳奇
-    LinkedSockets = 5
-    Rarity = Unique
-    SetTextColor 0 0 0 # TEXTCOLOR: Black
-    SetBackgroundColor 175 96 37
-    SetFontSize 45
-    CustomAlertSound "LOL_GodLike.ogg"
+	LinkedSockets = 5
+	Rarity = Unique
+	SetTextColor 0 0 0 # TEXTCOLOR: Black
+	SetBackgroundColor 175 96 37
+	SetFontSize 45
+	CustomAlertSound "LOL_GodLike.ogg"
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
-Show # 傳奇 - T2傳奇 - 
+Show # 傳奇 - T2傳奇
 	Rarity = Unique
-	BaseType "Abyssal Axe" "Ancient Gauntlets" "Assassin's Boots" "Bismuth Flask" "Carnal Sceptre" "Champion Kite Shield" "Clasped Mitts" "Coiled Staff" "Corsair Sword" "Destiny Leather" "Ezomyte Burgonet" "Full Wyrmscale" "Granite Flask" "Hellion's Paw" "Imperial Claw" "Iron Sceptre" "Jasper Chopper" "Midnight Blade" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Ritual Sceptre" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Serpentscale Gauntlets" "Siege Axe" "Sorcerer Gloves" "Steelwood Bow" "Two-Stone Ring" "Vaal Axe" "Vaal Mask" "Vaal Rapier" "Vaal Sceptre" "Vaal Spirit Shield" "Varnished Coat" "Void Axe"
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
-    SetFontSize 45
-    CustomAlertSound "LOL_GodLike.ogg"
+	BaseType "Arcanist Gloves" "Bismuth Flask" "Blue Pearl Amulet" "Champion Kite Shield" "Legion Gloves" "Wyrmscale Doublet" "Sacrificial Garb" "Nubuck Gloves" "Occultist's Vestment" "Sanctified Life Flask" "Stibnite Flask" "Timeworn Claw" "Granite Flask" "Midnight Blade" "Imperial Maul" "Blood Sceptre" "Karui Maul" "Clasped Mitts" "Bronzescale Boots" "Savant's Robe" "Assassin's Boots" "Callous Mask Piece" "Lacquered Buckler" "Spine Bow" "Citadel Bow" "Fossilised Spirit Shield" "Royal Burgonet" "Archon Kite Shield Piece" "Steel Circlet" "Ivory Watchstone"
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
+	SetFontSize 45
+	CustomAlertSound "LOL_GodLike.ogg"
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
 Show # 傳奇 - T2傳奇 - 同基底傳奇
 	Rarity = Unique
-	BaseType "Blood Raiment" "Coral Amulet" "Ebony Tower Shield" "Ezomyte Staff" "Fiend Dagger" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Iron Ring" "Judgement Staff" "Magistrate Crown" "Onyx Amulet" "Sadist Garb" "Sage Wand" "Stibnite Flask" "Studded Belt"
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
-    SetFontSize 42
-    CustomAlertSound "LOL_GodLike.ogg"
+	BaseType "Harlequin Mask" "Coral Amulet" "Gold Ring" "Imperial Skean" "Iron Ring" "Jade Amulet" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Onyx Amulet" "Sadist Garb" "Crusader Gloves" "Studded Belt" "Sulphur Flask" "Turquoise Amulet" "Exquisite Leather" "Sorcerer Boots" "Stealth Boots" "Leather Belt" "Nightmare Bascinet"
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
+	SetFontSize 42
+	CustomAlertSound "LOL_GodLike.ogg"
 	MinimapIcon 1 Brown Star
 	PlayEffect Brown
 	
 Show # 傳奇 - T2傳奇 - 同基底傳奇(聯盟)
 	Rarity = Unique
-	BaseType "Agate Amulet" "Amber Amulet" "Hubris Circlet" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Silver Flask" "Topaz Ring" "Unset Ring"
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
-    SetFontSize 42
-    CustomAlertSound "LOL_GodLike.ogg"
+	BaseType "Amber Amulet" "Assassin Bow" "Fiend Dagger" "Citrine Amulet" "Sapphire Ring" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Agate Amulet" "Amethyst Ring" "Opal Ring" "Topaz Ring" "Silver Flask" "Terror Claw" "Vaal Blade" "Penetrating Arrow Quiver" "Hubris Circlet" "Carnal Mitts" "Widowsilk Robe" "Necromancer Circlet" "Carnal Armour" "Golden Plate" "Vaal Regalia" "Titan Greaves"
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
+	SetFontSize 42
+	CustomAlertSound "LOL_GodLike.ogg"
 	MinimapIcon 1 Brown Star
 	PlayEffect Brown
 	
-Show # 傳奇 - T2.5傳奇
-	Rarity = Unique
-	BaseType "Assassin Bow" "Bronzescale Boots" "Deerskin Gloves" "Ezomyte Blade" "Holy Chainmail" "Imperial Skean" "Karui Maul" "Opal Wand" "Silk Gloves" "Soldier Helmet" "Sulphur Flask" "Timeworn Claw" "Titanium Spirit Shield" "Vaal Blade" "War Hammer"
-    SetTextColor 0 0 0
-    SetBackgroundColor 175 96 37
-    SetFontSize 42
-	CustomAlertSound "LOL_Dominating.ogg"
-	MinimapIcon 1 Brown Star
-	PlayEffect Brown
+#Show # 傳奇 - T2.5傳奇
+#	Rarity = Unique
+#	BaseType "Assassin Bow" "Bronzescale Boots" "Deerskin Gloves" "Ezomyte Blade" "Holy Chainmail" "Imperial Skean" "Karui Maul" "Opal Wand" "Silk Gloves" "Soldier Helmet" "Sulphur Flask" "Timeworn Claw" "Titanium Spirit Shield" "Vaal Blade" "War Hammer"
+#	SetTextColor 0 0 0
+#	SetBackgroundColor 175 96 37
+#	SetFontSize 42
+#	CustomAlertSound "LOL_Dominating.ogg"
+#	MinimapIcon 1 Brown Star
+#	PlayEffect Brown
 
 Show # 傳奇 - 珠寶
 	Rarity = Unique
@@ -1407,12 +1480,19 @@ Show # 傳奇 - 戒指
 
 Show # 傳奇 - 預言傳奇
 	Rarity = Unique
-	BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
-    SetTextColor 175 96 37
-    SetBorderColor 100 37 255 200 # BORDERCOLOR: Cosmetic: Fated Uniques
+	BaseType "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gavel" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Gold Amulet" "Golden Buckler" "Great Crown" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Moonstone Ring" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Tarnished Spirit Shield" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+	SetTextColor 175 96 37
+	SetBorderColor 100 37 255 200 # BORDERCOLOR: Cosmetic: Fated Uniques
 	MinimapIcon 1 Blue Star
 
 # Section: [1007]傳奇 - 其他傳奇
+
+#Show # 傳奇 - 雜傳奇 - 想隱藏的話可以隱藏這個
+#	Rarity = Unique
+#	BaseType "Elegant Foil" "Ambusher" "Antique Greaves" "Antique Rapier" "Astral Plate" "Auric Mace" "Aventail Helmet" "Awl" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Bone Armour" "Bone Circlet" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Embroidered Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Crusader Chainmail" "Crystal Sceptre" "Cutthroat's Garb" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Demon Dagger" "Demon's Horn" "Desert Brigandine" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Flaying Knife" "Fright Claw" "Full Scale Armour" "Gladius" "Goat's Horn" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Iron Gauntlets" "Ivory Spirit Shield" "Jagged Foil" "Karui Sceptre" "Lacquered Helmet" "Lathi" "Lion Sword" "Long Staff" "Loricated Ringmail" "Lunaris Circlet" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Military Staff" "Mosaic Kite Shield" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Platinum Kris" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Wand" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Riveted Boots" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Sabre" "Sage's Robe" "Saintly Chainmail" "Samite Gloves" "Samite Helmet" "Satin Gloves" "Scholar's Robe" "Secutor Helm" "Crystal Belt" "Serpentine Staff" "Shadow Axe" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Corsair Sword" "Soldier Boots" "Spidersilk Robe" "Spiked Club" "Steel Gauntlets" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sundering Axe" "Supreme Spiked Shield" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Tribal Circlet" "Tricorne" "Twilight Blade" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Vaal Hatchet" "Vanguard Belt" "Vile Staff" "Visored Sallet" "War Sword" "Whalebone Rapier" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet" "Platinum Sceptre" "Iron Sceptre" "Tyrant's Sekhem" "Slaughter Knife" "Hellion's Paw" "Short Bow" "Abyssal Axe" "Throat Stabber" "Hallowed Hybrid Flask" "Diamond Flask" "Destiny Leather" "Serpentscale Gauntlets" "Legion Boots" "Sinner Tricorne" "Deicide Mask" "Festival Mask" "Conjurer Boots" "Brass Spirit Shield" "Spike-Point Arrow Quiver" "Laminated Kite Shield" "Necromancer Silks" "Sorcerer Gloves" "Assassin's Garb" "Conjurer Gloves" "Sentinel Jacket"
+#	SetTextColor 175 96 37
+#	SetBorderColor 100 37 255 200 # BORDERCOLOR: Cosmetic: Fated Uniques
+#	MinimapIcon 1 Blue Star
 
 Show # 傳奇 - 其他傳奇
     Rarity = Unique
