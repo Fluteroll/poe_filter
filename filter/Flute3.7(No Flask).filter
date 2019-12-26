@@ -22,6 +22,8 @@
 #CustomAlertSound "GoogleT_betrayal.ogg" 背叛聯盟物品
 #CustomAlertSound "GoogleT_synthesis.ogg" 追憶聯盟物品
 #CustomAlertSound "GoogleT_legion.ogg" 戰亂聯盟物品
+#CustomAlertSound "GoogleT_blight.ogg" 凋落聯盟
+#CustomAlertSound "GoogleT_metamorph" 鍊魔聯盟
 #CustomAlertSound "HearthStone_Rare.ogg" 精良物品
 #CustomAlertSound "LOL_Aced.ogg" 命運卡T2
 #CustomAlertSound "DOMO_mid.ogg" 命運卡T3
@@ -41,6 +43,7 @@
 # Section[103]眾神聖器
 # Section[104]地圖
 # Section[105]聖甲蟲
+# Section[106]凋落地圖
 #
 # 命運卡
 # 光柱:藍
@@ -384,7 +387,32 @@ Show # 聖甲蟲 - T3
 	MinimapIcon 0 Red Square
 	PlayEffect White
 
-	
+
+
+
+
+# Section: [106] 凋落地圖
+
+Show # 凋落地圖 - T15以上
+	BlightedMap True
+	MapTier >= 15
+	Class Maps
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 45
+	CustomAlertSound "GoogleT_blight.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+
+Show # 凋落地圖 - 未滿T15
+	BlightedMap True
+	Class Maps
+	SetBorderColor 255 0 0
+	SetFontSize 42
+	CustomAlertSound "GoogleT_blight.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
 	
 	
 	
