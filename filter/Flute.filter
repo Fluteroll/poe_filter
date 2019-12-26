@@ -65,6 +65,7 @@
 # Section[307]特殊物品 - 聯盟石
 # Section[308]特殊物品 - 古典遺鑰
 # Section[310]特殊物品 - 穿越聯盟
+# Section[311]特殊物品 - 鍊魔聯盟
 # Section[398]特殊物品 - 任務道具
 # Section[399]特殊物品 - 魚竿
 #
@@ -85,6 +86,7 @@
 # Section[412]穿越聯盟
 # Section[413]掘獄聯盟
 # Section[414]戰亂聯盟
+# Section[415]鍊魔聯盟
 # Section[499]通貨安全線
 #
 # 技能石
@@ -606,6 +608,34 @@ Show # 特殊物品 - 穿越聯盟物品
 	CustomAlertSound "GoogleT_incursion.ogg"
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
+	
+# Section: [311]特殊物品 - 鍊魔聯盟
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 80lv以上
+	ItemLevel >= 80
+	Class "Metamorph"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 稀有器官
+	Class "Metamorph"
+	BaseType "Liver" "Eye"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 其他
+	Class "Metamorph"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 
 # Section: [398]特殊物品 - 任務道具
 
@@ -1064,7 +1094,7 @@ Show # 通貨 - 掘獄聯盟通貨 - 其他化石
 	
 	
 
-# Section: [413]戰亂聯盟
+# Section: [414]戰亂聯盟
 
 Show # 通貨 - 戰亂聯盟通貨 - T1 裂片
 	Class Currency
@@ -1090,6 +1120,40 @@ Show # 通貨 - 戰亂聯盟通貨 - 培育器
     SetFontSize 42
     CustomAlertSound "GoogleT_legion.ogg"
 	MinimapIcon 0 Blue Circle
+	PlayEffect Yellow
+
+
+
+
+
+# Section: [415]鍊魔聯盟
+
+Show # 通貨 - 鍊魔聯盟通貨 - T1 催化劑
+#	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+#	SetTextColor 0 0 0
+#	SetBackgroundColor 102 178 255
+#	SetBorderColor 170 158 129
+#	SetFontSize 45
+#	CustomAlertSound "Mario_Timesup.ogg"
+#	MinimapIcon 0 Red Circle
+#	PlayEffect Yellow
+
+Show # 通貨 - 鍊魔聯盟通貨 - T2 催化劑
+#	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+#	SetTextColor 0 0 0
+#	SetBackgroundColor 102 178 255
+#	SetBorderColor 170 158 129
+#	SetFontSize 45
+#	CustomAlertSound "Mario_1up.ogg"
+#	MinimapIcon 0 Red Circle
+#	PlayEffect Yellow
+
+Show # 通貨 - 鍊魔聯盟通貨 - T3 催化劑
+	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow
 
 
