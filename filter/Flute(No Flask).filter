@@ -753,7 +753,7 @@ Show # 通貨 - T3 鏈結石 點金石 製圖釘 工程石 製圖六分儀．簡
 
 Show # 通貨 - T2 祝福石 富豪石 後悔石 混沌石 寶石匠的稜鏡 瓦爾寶珠 豐裕牌組 重鑄石 古變石 地平石 束縛石 崇高石碎片 製圖六分儀．精華
     Class "Currency"
-    BaseType "Blessed Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Prime Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard" "Journeyman Cartographer's Sextant"
+    BaseType "Blessed Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard" "Prime Sextant"
     SetBorderColor 102 178 255
 	SetFontSize 40
     CustomAlertSound "Mario_Mushroom.ogg"
