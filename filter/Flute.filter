@@ -1,7 +1,7 @@
 ﻿# Script edited with Filtration
 # EnableBlockGroups
 # 上面那行是Filtration v0.17開啟勾選框框()要加的指令
-# 小呆 edit poe v3.9.00 update:2019.12.27
+# 小呆 edit poe v3.9.01 update:2019.12.28
 #CustomAlertSound "Mario_Jump.ogg" 低階通貨
 #CustomAlertSound "RO_Cat.ogg" 中階通貨
 #CustomAlertSound "Mario_Mushroom.ogg" 中高階通貨 五連
@@ -86,7 +86,8 @@
 # Section[412]穿越聯盟
 # Section[413]掘獄聯盟
 # Section[414]戰亂聯盟
-# Section[415]鍊魔聯盟
+# Section[415]凋落聯盟
+# Section[416]鍊魔聯盟
 # Section[499]通貨安全線
 #
 # 技能石
@@ -175,7 +176,6 @@ Show # 地圖碎片 - 女神祭品
 	MinimapIcon 0 Yellow Square
 	PlayEffect White
 
-
 Show # 地圖碎片 - 凡人的希望 凡人的無知
     Class "Map Fragments"
     BaseType "Mortal Hope" "Mortal Ignorance"
@@ -219,14 +219,13 @@ Show # 地圖碎片 - 午夜的奉獻
     CustomAlertSound "Mario_1up.ogg"
 	MinimapIcon 0 Red Square
 	PlayEffect White
-	
-	
+
 Show # 地圖碎片 - 裂痕石
 	Class "Map Fragments"
 	BaseType "Breachstone" 
 	SetBackgroundColor 102 178 255
-    SetFontSize 42
-    CustomAlertSound "Mario_1up.ogg"
+	SetFontSize 42
+	CustomAlertSound "Mario_1up.ogg"
 	MinimapIcon 0 Red Square
 	PlayEffect White
 	
@@ -239,7 +238,15 @@ Show # 地圖碎片 - 戰亂聯盟 印記
 	MinimapIcon 0 Red Square
 	PlayEffect White
 
-	
+Show # 地圖碎片 - 鍊魔聯盟 地圖碎片
+	Class "Map Fragments"
+	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	SetBackgroundColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
 # Section: [103]眾神聖器
 
 Show # 眾神聖器 - 聖器
@@ -405,7 +412,6 @@ Show # 凋落地圖 - T15以上
 	CustomAlertSound "GoogleT_blight.ogg"
 	MinimapIcon 0 Red Square
 	PlayEffect White
-
 
 Show # 凋落地圖 - 未滿T15
 	BlightedMap True
@@ -620,6 +626,21 @@ Show # 特殊物品 - 穿越聯盟物品
 	
 # Section: [311]特殊物品 - 鍊魔聯盟
 
+Show # 特殊物品 - 鍊魔聯盟物品 - 蛋白守望石
+	BaseType "Ivory Watchstone"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show # 特殊物品 - 鍊魔聯盟物品 - 守望石
+	BaseType "Watchstone"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
 Show # 特殊物品 - 鍊魔聯盟物品 - 80lv以上
 	ItemLevel >= 80
 	Class "Metamorph"
@@ -719,9 +740,9 @@ Show # 通貨 - T4 機會石 工匠石 玻璃彈珠 預言銀幣
 
 # Section: [405]通貨 - T3
 
-Show # 通貨 - T3 鏈結石 點金石 製圖釘 工程石
+Show # 通貨 - T3 鏈結石 點金石 製圖釘 工程石 製圖六分儀．簡易
 	Class "Currency"
-    BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb"
+    BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Simple Sextant"
     SetBorderColor 254 254 118
 	SetFontSize 40
     CustomAlertSound "RO_Cat.ogg"
@@ -730,9 +751,9 @@ Show # 通貨 - T3 鏈結石 點金石 製圖釘 工程石
 
 # Section: [406]通貨 - T2
 
-Show # 通貨 - T2 祝福石 富豪石 後悔石 混沌石 寶石匠的稜鏡 瓦爾寶珠 豐裕牌組 製圖六分儀．見習 重鑄石 古變石 地平石 束縛石 崇高石碎片 製圖六分儀．學者
+Show # 通貨 - T2 祝福石 富豪石 後悔石 混沌石 寶石匠的稜鏡 瓦爾寶珠 豐裕牌組 重鑄石 古變石 地平石 束縛石 崇高石碎片 製圖六分儀．精華
     Class "Currency"
-    BaseType "Blessed Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard" "Journeyman Cartographer's Sextant"
+    BaseType "Blessed Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Prime Sextant" "Stacked Deck" "Orb of Scouring" "Ancient Orb" "Orb of Horizons" "Orb of Binding" "Exalted Shard" "Journeyman Cartographer's Sextant"
     SetBorderColor 102 178 255
 	SetFontSize 40
     CustomAlertSound "Mario_Mushroom.ogg"
@@ -741,9 +762,9 @@ Show # 通貨 - T2 祝福石 富豪石 後悔石 混沌石 寶石匠的稜鏡 �
 
 # Section: [407]通貨 - T1.5
 
-Show # 通貨 - T1.5 製圖六分儀．大師 神諭石
+Show # 通貨 - T1.5 製圖六分儀．覺醒 神諭石
     Class "Currency"
-    BaseType "Master Cartographer's Sextant" "Harbinger's Orb"
+    BaseType "Awakened Sextant" "Harbinger's Orb"
     SetBorderColor 161 0 225
 	SetFontSize 42
     CustomAlertSound "Mario_1up.ogg"
@@ -774,7 +795,18 @@ Show # 通貨 - T1 永恆寶珠 白化的羽毛 卡蘭德的魔鏡碎片
 	MinimapIcon 0 Red Circle
 	PlayEffect Yellow
 
-Show # 通貨 - T1自帶掉落音效 - 崇高石
+Show # 通貨 - T1 特殊崇高石
+	Class Currency
+	BaseType "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb"
+    SetTextColor 0 0 0
+    SetBackgroundColor 102 178 255
+    SetBorderColor 170 158 129
+    SetFontSize 45
+    CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 崇高石
     Class "Currency"
     BaseType "Exalted Orb"
     SetTextColor 0 0 0
@@ -1060,31 +1092,31 @@ Show # 通貨 - 掘獄聯盟通貨 - 原始煉金鑄新儀 1S
 #	MinimapIcon 2 Green Circle
 
 
-Show # 通貨 - 掘獄聯盟通貨 - T1 化石 (雕琢 分裂 鏤空 雕紋 顫慄)
+Show # 通貨 - 掘獄聯盟通貨 - T1 化石
 	Class Currency
-	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Glyphic Fossil" "Bloodstained Fossil"
-    SetTextColor 0 0 0
-    SetBackgroundColor 102 178 255
-    SetBorderColor 170 158 129
-    SetFontSize 45
-    CustomAlertSound "Mario_Timesup.ogg"
+	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_Timesup.ogg"
 	MinimapIcon 0 Blue Circle
 	PlayEffect Yellow
 
-Show # 通貨 - 掘獄聯盟通貨 - T2 化石 (血漬 紊亂 鑲金 神聖 透明)
+Show # 通貨 - 掘獄聯盟通貨 - T2 化石
 	Class Currency
-	BaseType "Gilded Fossil" "Sanctified Fossil" "Tangled Fossil" "Dense Fossil"
-    SetTextColor 0 0 0
-    SetBackgroundColor 102 178 255
-    SetBorderColor 170 158 129
-    SetFontSize 45
-    CustomAlertSound "Mario_1up.ogg"
+	BaseType "Corroded Fossil" "Glyphic Fossil" "Tangled Fossil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_1up.ogg"
 	MinimapIcon 0 Blue Circle
 	PlayEffect Yellow
 
-#Show # 通貨 - 掘獄聯盟通貨 - T4 化石 (寒風 暴炎 特異)
+#Show # 通貨 - 掘獄聯盟通貨 - T4 化石 - 雜化石可以考慮隱藏
 #	Class Currency
-#	BaseType "Frigid Fossil" "Scorched Fossil" "Aberrant Fossil"
+#	BaseType "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 #	SetFontSize 45
 #	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 #	SetBorderColor 0 0 0 200             # BORDERCOLOR:	 Neutral T2
@@ -1135,7 +1167,55 @@ Show # 通貨 - 戰亂聯盟通貨 - 培育器
 
 
 
-# Section: [415]鍊魔聯盟
+
+# Section: [415]凋落聯盟
+Show # 通貨 - 凋落聯盟通貨 - T1油
+	Class Currency
+	BaseType "Golden Oil" "Silver Oil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T2油
+	Class Currency
+	BaseType "Opalescent Oil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T3油
+	Class Currency
+	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Violet Oil" "Black Oil" "Verdant Oil" "Amber Oil"
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T4油
+	Class Currency
+	BaseType "Clear Oil" "Sepia Oil"
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb"
+	SetBorderColor 254 254 118
+	SetFontSize 40
+	CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 1 White Circle
+	PlayEffect Yellow Temp
+
+
+
+
+
+
+# Section: [416]鍊魔聯盟
 
 #Show # 通貨 - 鍊魔聯盟通貨 - T1 催化劑
 #	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
@@ -1179,6 +1259,15 @@ Show # 通貨安全線
 	
 	
 # Section: [501]技能石
+
+Show # 技能石 - 覺醒技能石
+	Class Gems
+	BaseType "Awakened"
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
 
 Show # 技能石 - 賦予
     Class "Gem"
