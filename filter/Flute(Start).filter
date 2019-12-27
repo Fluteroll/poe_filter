@@ -86,7 +86,8 @@
 # Section[412]穿越聯盟
 # Section[413]掘獄聯盟
 # Section[414]戰亂聯盟
-# Section[415]鍊魔聯盟
+# Section[415]凋落聯盟
+# Section[416]鍊魔聯盟
 # Section[499]通貨安全線
 #
 # 技能石
@@ -1135,7 +1136,55 @@ Show # 通貨 - 戰亂聯盟通貨 - 培育器
 
 
 
-# Section: [415]鍊魔聯盟
+
+# Section: [415]凋落聯盟
+Show # 通貨 - 凋落聯盟通貨 - T1油
+	Class Currency
+	BaseType "Golden Oil" "Silver Oil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_Timesup.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T2油
+	Class Currency
+	BaseType "Opalescent Oil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Red Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T3油
+	Class Currency
+	BaseType "Azure Oil" "Crimson Oil" "Teal Oil" "Violet Oil" "Black Oil" "Verdant Oil" "Amber Oil"
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "Mario_Mushroom.ogg"
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
+
+Show # 通貨 - 凋落聯盟通貨 - T4油
+	Class Currency
+	BaseType "Clear Oil" "Sepia Oil"
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb"
+	SetBorderColor 254 254 118
+	SetFontSize 40
+	CustomAlertSound "RO_Cat.ogg"
+#	MinimapIcon 1 White Circle
+	PlayEffect Yellow Temp
+
+
+
+
+
+
+# Section: [416]鍊魔聯盟
 
 #Show # 通貨 - 鍊魔聯盟通貨 - T1 催化劑
 #	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
