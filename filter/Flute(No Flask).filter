@@ -1092,31 +1092,31 @@ Show # 通貨 - 掘獄聯盟通貨 - 原始煉金鑄新儀 1S
 #	MinimapIcon 2 Green Circle
 
 
-Show # 通貨 - 掘獄聯盟通貨 - T1 化石 (雕琢 分裂 鏤空 雕紋 顫慄)
+Show # 通貨 - 掘獄聯盟通貨 - T1 化石
 	Class Currency
-	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Glyphic Fossil" "Bloodstained Fossil"
-    SetTextColor 0 0 0
-    SetBackgroundColor 102 178 255
-    SetBorderColor 170 158 129
-    SetFontSize 45
-    CustomAlertSound "Mario_Timesup.ogg"
+	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_Timesup.ogg"
 	MinimapIcon 0 Blue Circle
 	PlayEffect Yellow
 
-Show # 通貨 - 掘獄聯盟通貨 - T2 化石 (血漬 紊亂 鑲金 神聖 透明)
+Show # 通貨 - 掘獄聯盟通貨 - T2 化石
 	Class Currency
-	BaseType "Gilded Fossil" "Sanctified Fossil" "Tangled Fossil" "Dense Fossil"
-    SetTextColor 0 0 0
-    SetBackgroundColor 102 178 255
-    SetBorderColor 170 158 129
-    SetFontSize 45
-    CustomAlertSound "Mario_1up.ogg"
+	BaseType "Corroded Fossil" "Glyphic Fossil" "Tangled Fossil"
+	SetTextColor 0 0 0
+	SetBackgroundColor 102 178 255
+	SetBorderColor 170 158 129
+	SetFontSize 45
+	CustomAlertSound "Mario_1up.ogg"
 	MinimapIcon 0 Blue Circle
 	PlayEffect Yellow
 
-#Show # 通貨 - 掘獄聯盟通貨 - T4 化石 (寒風 暴炎 特異)
+#Show # 通貨 - 掘獄聯盟通貨 - T4 化石 - 雜化石可以考慮隱藏
 #	Class Currency
-#	BaseType "Frigid Fossil" "Scorched Fossil" "Aberrant Fossil"
+#	BaseType "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 #	SetFontSize 45
 #	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 #	SetBorderColor 0 0 0 200             # BORDERCOLOR:	 Neutral T2
