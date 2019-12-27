@@ -1030,7 +1030,6 @@ Show # 通貨 - 穿越聯盟通貨
 # Section: [413]掘獄聯盟
 
 Show # 通貨 - 掘獄聯盟通貨 - 終極混沌鑄新儀 終極煉金鑄新儀 4S
-	Class "Delve Socketable Currency"
 	BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
     SetTextColor 0 0 0
     SetBackgroundColor 102 178 255
@@ -1041,7 +1040,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 終極混沌鑄新儀 終極煉金鑄新儀
 	PlayEffect Yellow
 
 Show # 通貨 - 掘獄聯盟通貨 - 強力混沌鑄新儀 3S
-	Class "Delve Socketable Currency"
 	BaseType "Powerful Chaotic Resonator"
     SetBorderColor 102 178 255
 	SetFontSize 40
@@ -1050,7 +1048,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 強力混沌鑄新儀 3S
 	PlayEffect Yellow
 	
 Show # 通貨 - 掘獄聯盟通貨 - 增幅混沌鑄新儀 2S
-	Class "Delve Socketable Currency"
 	BaseType "Potent Chaotic Resonator"
     SetBorderColor 254 254 118
 	SetFontSize 40
@@ -1059,7 +1056,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 增幅混沌鑄新儀 2S
 	PlayEffect Yellow Temp
 
 Show # 通貨 - 掘獄聯盟通貨 - 原始混沌鑄新儀 1S
-	Class "Delve Socketable Currency"
 	BaseType "Primitive Chaotic Resonator"
     SetBorderColor 254 254 118
 	SetFontSize 40
@@ -1068,7 +1064,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 原始混沌鑄新儀 1S
 #	PlayEffect Yellow
 
 Show # 通貨 - 掘獄聯盟通貨 - 強力煉金鑄新儀 3S
-	Class "Delve Socketable Currency"
 	BaseType "Powerful Alchemical Resonator"
     SetBorderColor 254 254 118
 	SetFontSize 40
@@ -1077,7 +1072,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 強力煉金鑄新儀 3S
 	PlayEffect Yellow
 	
 Show # 通貨 - 掘獄聯盟通貨 - 增幅煉金鑄新儀 2S
-	Class "Delve Socketable Currency"
 	BaseType "Potent Alchemical Resonator"
     SetBorderColor 170 158 129
 	SetFontSize 40
@@ -1085,7 +1079,6 @@ Show # 通貨 - 掘獄聯盟通貨 - 增幅煉金鑄新儀 2S
 #	MinimapIcon 2 Green Circle
 	
 Show # 通貨 - 掘獄聯盟通貨 - 原始煉金鑄新儀 1S
-	Class "Delve Socketable Currency"
 	BaseType "Primitive Alchemical Resonator"
     SetBorderColor 170 158 129
     CustomAlertSound "Mario_Jump.ogg"
@@ -1968,10 +1961,10 @@ Show # 稀有裝備 - 物等86以上稀有裝備(可全T1詞綴) 腰帶 護身�
 	SetFontSize 40
     SetBorderColor 161 0 225
 	
-Show # 稀有裝備 - 物等86以上稀有裝備(可全T1詞綴) 衣服 鞋子 盾牌 箭袋
+Show # 稀有裝備 - 物等86以上稀有裝備(可全T1詞綴) 衣服 鞋子 盾牌 箭袋 戰杖 符文匕首
     ItemLevel >= 86
     Rarity = Rare
-    Class "Helmets" "Body Armours" "Boots" "Shields" "Quivers"
+    Class "Helmets" "Body Armours" "Boots" "Shields" "Quivers" "Warstaves" "Rune Dagger" 
     SetBorderColor 161 0 225
 
 Show # 稀有裝備 - 物等85以上稀有裝備(可全T1詞綴) 戒指
@@ -1997,7 +1990,7 @@ Show # 稀有裝備 - 物等75以上稀有裝備(富豪石) 飾品
 Show # 稀有裝備 - 物等75以上稀有裝備(富豪石) 非飾品
     ItemLevel >= 75
     Rarity = Rare
-    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers"
+    Class "Warstaves" "Rune Dagger" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers"
     SetBorderColor 102 178 255
 
 Show # 稀有裝備 - 物等60以上稀有裝備(混沌石) 飾品
@@ -2010,7 +2003,7 @@ Show # 稀有裝備 - 物等60以上稀有裝備(混沌石) 飾品
 Show # 稀有裝備 - 物等60以上稀有裝備(混沌石) 非飾品
     ItemLevel >= 60
     Rarity = Rare
-    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
+    Class "Warstaves" "Rune Dagger" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
     SetBorderColor 254 254 118
 
 Show # 稀有裝備 - 物等60未滿稀有裝備(機會石)
@@ -2020,7 +2013,7 @@ Show # 稀有裝備 - 物等60未滿稀有裝備(機會石)
 	
 Show # 稀有裝備 - 物等60未滿稀有裝備(機會石)
     Rarity = Rare
-    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
+    Class "Warstaves" "Rune Dagger" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Belts" "Amulets" "Rings"
 
 #Show # 稀有裝備商店配方 - 物等75以上白腰帶(有需要可點金)
 #    ItemLevel >= 75
@@ -2142,11 +2135,11 @@ Show # 戒指轉項鍊材料
 
 Show # 魔法裝備(白藍垃圾)
 	Rarity = Magic
-    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
+    Class "Warstaves" "Rune Dagger" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
 
 Show # 普通裝備(白藍垃圾)
 	Rarity = Normal
-    Class "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
+    Class "Warstaves" "Rune Dagger" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Wands" "Claws" "Thrusting One Hand Swords" "Helmets" "Body Armours" "Gloves" "Boots" "Shields" "Quivers" "Amulets" "Rings" "Belts"
 
 	
 	
