@@ -725,10 +725,11 @@ Show # 通貨 - T5 增幅石
 # Section: [404]通貨 - T4
 
 Show # 通貨 - T4 改造石 幻色石
-    Class "Currency"
-    BaseType "Orb of Alteration" "Chromatic Orb"
-    SetBorderColor 170 158 129
-    CustomAlertSound "Mario_Jump.ogg"
+	Class "Currency"
+	BaseType "Orb of Alteration" "Chromatic Orb"
+	SetFontSize 38
+	SetBorderColor 170 158 129
+	CustomAlertSound "Mario_Jump.ogg"
 
 Show # 通貨 - T4 機會石 工匠石 玻璃彈珠 預言銀幣
     Class "Currency"
