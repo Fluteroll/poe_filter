@@ -1,7 +1,7 @@
 ﻿# Script edited with Filtration
 # EnableBlockGroups
 # 上面那行是Filtration v0.17開啟勾選框框()要加的指令
-# 小呆 edit poe v3.9.03 update:2019.12.29
+# 小呆 edit poe v3.11.01 update:2020.06.23
 #CustomAlertSound "Mario_Jump.ogg" 低階通貨
 #CustomAlertSound "RO_Cat.ogg" 中階通貨
 #CustomAlertSound "Mario_Mushroom.ogg" 中高階通貨 五連
@@ -1296,7 +1296,6 @@ Show # $type->seeds $tier->lvl1w
 	BaseType "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
     SetBorderColor 254 254 118
 	SetFontSize 40
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1305,7 +1304,6 @@ Show # $type->seeds $tier->lvl1v
 	BaseType "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed"
     SetBorderColor 254 254 118
 	SetFontSize 40
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1314,7 +1312,6 @@ Show # $type->seeds $tier->lvl1p
 	BaseType "Primal Cleaveling Seed" "Primal Dustspitter Seed" "Primal Feasting Horror Seed" "Primal Maw Seed" "Primal Rhoa Seed"
     SetBorderColor 254 254 118
 	SetFontSize 40
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1323,7 +1320,6 @@ Show # $type->seeds $tier->lvl2w
 	BaseType "Wild Bristlebeast Grain" "Wild Chieftain Grain" "Wild Homunculus Grain" "Wild Snap Hound Grain" "Wild Spikeback Grain"
     SetBorderColor 254 254 118
 	SetFontSize 45
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1332,7 +1328,6 @@ Show # $type->seeds $tier->lvl2v
 	BaseType "Vivid Nestback Grain" "Vivid Parasite Grain" "Vivid Razorleg Grain" "Vivid Sapsucker Grain" "Vivid Striketail Grain"
     SetBorderColor 254 254 118
 	SetFontSize 45
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1341,7 +1336,6 @@ Show # $type->seeds $tier->lvl2p
 	BaseType "Primal Chimeral Grain" "Primal Dustcrab Grain" "Primal Rhex Grain" "Primal Scrabbler Grain" "Primal Viper Grain"
     SetBorderColor 254 254 118
 	SetFontSize 45
-    CustomAlertSound "GoogleT_harvest.ogg"
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -1777,7 +1771,7 @@ Show # 傳奇 - T2傳奇 - 同基底傳奇
 	MinimapIcon 1 Brown Star
 	PlayEffect Brown
 	
-Show # 傳奇 - T2傳奇 - 同基底傳奇(聯盟)
+#Show # 傳奇 - T2傳奇 - 同基底傳奇(聯盟)
 #	Rarity = Unique
 #	BaseType "Amber Amulet" "Assassin Bow" "Fiend Dagger" "Citrine Amulet" "Sapphire Ring" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Agate Amulet" "Amethyst Ring" "Opal Ring" "Topaz Ring" "Silver Flask" "Terror Claw" "Vaal Blade" "Penetrating Arrow Quiver" "Hubris Circlet" "Carnal Mitts" "Widowsilk Robe" "Necromancer Circlet" "Carnal Armour" "Golden Plate" "Vaal Regalia" "Titan Greaves"
 #	SetTextColor 0 0 0
