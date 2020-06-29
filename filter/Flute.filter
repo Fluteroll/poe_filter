@@ -1,7 +1,7 @@
 ﻿# Script edited with Filtration
 # EnableBlockGroups
 # 上面那行是Filtration v0.17開啟勾選框框()要加的指令
-# 小呆 edit poe v3.11.01 update:2020.06.23
+# 小呆 edit poe v3.11.02 update:2020.06.29
 #CustomAlertSound "Mario_Jump.ogg" 低階通貨
 #CustomAlertSound "RO_Cat.ogg" 中階通貨
 #CustomAlertSound "Mario_Mushroom.ogg" 中高階通貨 五連
@@ -2174,11 +2174,22 @@ Show # 異界輿圖新基底 - 物等60以上 先鋒腰帶 喚骨頭盔 魔指�
 	
 	
 	
-# Section: [1029]自訂白裝基底(點精髓用)
+# Section: [1029]自訂白裝基底(手工裝備用)
 
-#Show # 自訂白裝基底(點精髓用)
-#    Rarity = Normal
-#    BaseType "Opal Wand"
+#Show # 自訂白裝基底 - 水晶法杖
+#   Rarity = Normal
+#   ItemLevel >= 84
+#   BaseType "Opal Wand"
+
+#Show # 自訂白裝基底 - 花冠重錘
+#   Rarity = Normal
+#   ItemLevel >= 83
+#   BaseType "Coronal Maul"
+
+#Show # 自訂白裝基底 - 魔性法杖
+#   Rarity = Normal
+#   ItemLevel >= 82
+#   BaseType "Imbued Wand"
 
 Show # 穿越聯盟手工尊師塑界基底
     ItemLevel >= 86
