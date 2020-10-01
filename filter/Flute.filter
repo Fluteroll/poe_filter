@@ -1,7 +1,7 @@
 ﻿# Script edited with Filtration
 # EnableBlockGroups
 # 上面那行是Filtration v0.17開啟勾選框框()要加的指令
-# 小呆 edit poe v3.11.02 update:2020.06.29
+# 小呆 edit poe v3.12.0 update:2020.10.01
 #CustomAlertSound "Mario_Jump.ogg" 低階通貨
 #CustomAlertSound "RO_Cat.ogg" 中階通貨
 #CustomAlertSound "Mario_Mushroom.ogg" 中高階通貨 五連
@@ -26,6 +26,8 @@
 #CustomAlertSound "GoogleT_metamorph" 鍊魔聯盟
 #CustomAlertSound "GoogleT_delirium.ogg" 譫妄聯盟
 #CustomAlertSound "GoogleT_harvest.ogg" 豐收聯盟
+#CustomAlertSound "GoogleT_heist.ogg" 劫盜聯盟
+#CustomAlertSound "GoogleT_replica.ogg" 贗品
 #CustomAlertSound "HearthStone_Rare.ogg" 精良物品
 #CustomAlertSound "LOL_Aced.ogg" 命運卡T2
 #CustomAlertSound "DOMO_mid.ogg" 命運卡T3
@@ -46,6 +48,7 @@
 # Section[104]地圖
 # Section[105]聖甲蟲
 # Section[106]凋落地圖
+# Section[107]劫盜地圖
 #
 # 命運卡
 # 光柱:藍
@@ -68,6 +71,7 @@
 # Section[308]特殊物品 - 古典遺鑰
 # Section[310]特殊物品 - 穿越聯盟
 # Section[311]特殊物品 - 鍊魔聯盟
+# Section[312]特殊物品 - 劫盜聯盟
 # Section[398]特殊物品 - 任務道具
 # Section[399]特殊物品 - 魚竿
 #
@@ -125,6 +129,8 @@
 # Section[1015]掘獄聯盟詞綴裝備
 # Section[1016]背叛聯盟詞綴裝備
 # Section[1017]追憶聯盟詞綴裝備
+# Section[1018]劫盜聯盟裝備
+# Section[1027]附魔裝備
 # Section[1028]異界輿圖新基底 ex.鋼鑄戒指.蛋白石戒指
 # Section[1030]稀有裝備
 # Section[1035]商店配方-換幻色石的裝備、換製圖釘的錘子、魔法素布腰帶(稀有武器洗回魔法材料)
@@ -436,11 +442,65 @@ Show # 凋落地圖 - 未滿T15
 	CustomAlertSound "GoogleT_blight.ogg"
 	MinimapIcon 0 Red Square
 	PlayEffect White
-	
-	
-	
-	
-	
+
+
+
+
+
+# Section: [107] 劫盜地圖/合約/藍圖
+Show
+	Rarity Unique
+	Class "Blueprint" "Contract"
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 45
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # $tier->t3 $type->heist->contract
+	Class "Contract"
+	BaseType "Contract: Bunker" "Contract: Laboratory" "Contract: Mansion" "Contract: Prohibited Library" "Contract: Records Office" "Contract: Repository" "Contract: Smuggler's Den" "Contract: Tunnels" "Contract: Underbelly"
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 45
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show
+	Class "Contract"
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show # $tier->t3 $type->heist->blueprints
+	Class "Blueprint"
+	BaseType "Blueprint: Bunker" "Blueprint: Laboratory" "Blueprint: Mansion" "Blueprint: Prohibited Library" "Blueprint: Records Office" "Blueprint: Repository" "Blueprint: Smuggler's Den" "Blueprint: Tunnels" "Blueprint: Underbelly"
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 45
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+Show
+	Class "Blueprint"
+	SetBackgroundColor 161 0 225
+	SetBorderColor 102 178 255
+	SetFontSize 40
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Red Square
+	PlayEffect White
+
+
+
+
+
+
 # Section: [201]T1 T2命運卡
 # 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
 Show # 命運卡 - T4 狼的影子 語法關係必須先寫在前面 不然會影響後面的"The Wolf"(T3彪狼)
@@ -679,6 +739,16 @@ Show # 特殊物品 - 鍊魔聯盟物品 - 其他
 	SetFontSize 45
     SetBorderColor 220 0 0 240
 	CustomAlertSound "GoogleT_metamorph.ogg"
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+# Section: [312]特殊物品 - 劫盜聯盟
+
+Show # 特殊物品 - 劫盜聯盟物品 - 劫盜目標
+	Class "Heist Target"
+	SetFontSize 45
+    SetBorderColor 220 0 0 240
+	CustomAlertSound "GoogleT_heist.ogg"
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
@@ -1402,6 +1472,15 @@ Show # 技能石 - 覺醒技能石
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
+Show # 技能石 - 替代品質
+    Class Gems
+    AlternateQuality True
+    SetBorderColor 102 178 255
+    SetFontSize 42
+    CustomAlertSound "Mario_1up.ogg"
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
 Show # 技能石 - 賦予
     Class "Gem"
     BaseType "Empower"
@@ -1420,7 +1499,6 @@ Show # 技能石 - 啟蒙
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
-
 Show # 技能石 - 增幅
     Class "Gem"
     BaseType "Enhance"
@@ -1429,7 +1507,6 @@ Show # 技能石 - 增幅
     CustomAlertSound "Mario_1up.ogg"
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
-
 
 Show # 技能石 - 物品數量增幅
     Class "Gem"
@@ -1720,7 +1797,7 @@ Show # 傳奇 - T1傳奇 (追憶)
 
 Show # 傳奇 - T1傳奇 
     Rarity Unique
-	BaseType == "Ambush Mitts" "Arcanist Gloves" "Assassin's Boots" "Blood Raiment" "Blue Pearl Amulet" "Carnal Boots" "Champion Kite Shield" "Crusader Boots" "Ezomyte Tower Shield" "Gladiator Plate" "Glorious Plate" "Greatwolf Talisman" "Imperial Maul" "Jewelled Foil" "Karui Maul" "Large Cluster Jewel" "Legion Gloves" "Meatgrinder" "Military Staff" "Nightmare Mace" "Nubuck Boots" "Occultist's Vestment" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Ruby Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Steel Ring" "Steelwood Bow" "Timeless Jewel" "Vaal Rapier" "Varnished Coat" "Zodiac Leather"
+	BaseType == "Blood Raiment" "Bone Helmet" "Carnal Boots" "Crimson Round Shield" "Crusader Boots" "Deerskin Gloves" "Ezomyte Dagger" "Ezomyte Tower Shield" "Fluted Bascinet" "Gladiator Plate" "Greatwolf Talisman" "Jewelled Foil" "Large Cluster Jewel" "Occultist's Vestment" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Ruby Flask" "Siege Axe" "Silk Gloves" "Steel Circlet" "Steelwood Bow" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet"
 	SetTextColor 255 255 255
 	SetBackgroundColor 175 96 37 # TEXTCOLOR: Uniques
 	SetBorderColor 102 178 255
@@ -1751,9 +1828,19 @@ Show # 傳奇 - T2傳奇 (深淵)
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
+Show # 傳奇 - 贗品
+	Replica True
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBackgroundColor 175 96 37
+	SetFontSize 45
+	CustomAlertSound "GoogleT_replica.ogg"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
 Show # 傳奇 - T2傳奇
 	Rarity = Unique
-	BaseType == "Arcanist Slippers" "Archon Kite Shield Piece" "Blood Sceptre" "Carnal Sceptre" "Citadel Bow" "Clasped Boots" "Corsair Sword" "Deerskin Gloves" "Demon Dagger" "Exquisite Leather" "Ezomyte Dagger" "Full Wyrmscale" "Gemstone Sword" "Grand Mana Flask" "Granite Flask" "Highborn Staff" "Hydrascale Boots" "Ivory Watchstone" "Jasper Chopper" "Jingling Spirit Shield" "Judgement Staff" "Karui Chopper" "Labrys" "Large Hybrid Flask" "Lion Pelt" "Opal Ring" "Pinnacle Tower Shield" "Riveted Gloves" "Royal Burgonet" "Sanctified Life Flask" "Sapphire Flask" "Steel Circlet" "Stibnite Flask" "Topaz Flask" "Vaal Blade" "Void Axe" "Wereclaw Talisman" "Wyrmscale Doublet" "Zealot Gloves"
+	BaseType == "Arcanist Gloves" "Arcanist Slippers" "Archon Kite Shield Piece" "Gemstone Sword" "Holy Chainmail" "Ivory Watchstone" "Jingling Spirit Shield" "Karui Maul" "Pinnacle Tower Shield" "Riveted Gloves" "Royal Axe" "Sapphire Flask" "Shackled Boots" "Steel Ring" "Wereclaw Talisman" "Zodiac Leather"
 	SetTextColor 0 0 0
 	SetBackgroundColor 175 96 37
 	SetFontSize 45
@@ -1763,7 +1850,7 @@ Show # 傳奇 - T2傳奇
 
 Show # 傳奇 - T2傳奇 - 同基底傳奇
 	Rarity = Unique
-	BaseType == "Archon Kite Shield" "Assassin Bow" "Carnal Mitts" "Carved Wand" "Clasped Mitts" "Coral Amulet" "Fiend Dagger" "Gavel" "Gold Amulet" "Gold Ring" "Golden Plate" "Heavy Belt" "Imperial Bow" "Iron Ring" "Jade Amulet" "Lacquered Garb" "Leather Belt" "Long Staff" "Magistrate Crown" "Medium Cluster Jewel" "Murder Mitts" "Nightmare Bascinet" "Onyx Amulet" "Paua Amulet" "Sadist Garb" "Sage Wand" "Saint's Hauberk" "Silver Flask" "Sinner Tricorne" "Slink Boots" "Small Cluster Jewel" "Sorcerer Boots" "Stealth Boots" "Steelscale Gauntlets" "Studded Belt" "Sulphur Flask" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Widowsilk Robe"
+	BaseType == "Agate Amulet" "Ambusher" "Archon Kite Shield" "Assassin Bow" "Carnal Armour" "Carnal Mitts" "Carved Wand" "Clasped Mitts" "Coral Amulet" "Gavel" "Gladius" "Glorious Plate" "Gold Ring" "Granite Flask" "Heavy Belt" "Jade Amulet" "Judgement Staff" "Lacquered Garb" "Leather Belt" "Legion Gloves" "Long Staff" "Magistrate Crown" "Medium Cluster Jewel" "Mirrored Spiked Shield" "Murder Mitts" "Paua Amulet" "Sadist Garb" "Saint's Hauberk" "Sentinel Jacket" "Silver Flask" "Sinner Tricorne" "Small Cluster Jewel" "Sorcerer Boots" "Stealth Boots" "Stibnite Flask" "Studded Belt" "Sulphur Flask" "Topaz Ring" "Triumphant Lamellar" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring"
 	SetTextColor 0 0 0
 	SetBackgroundColor 175 96 37
 	SetFontSize 42
@@ -1813,7 +1900,7 @@ Show # 傳奇 - 戒指
 
 Show # 傳奇 - 預言傳奇
 	Rarity = Unique
-	BaseType == "Brass Maul" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
+	BaseType == "Brass Maul" "Clasped Boots" "Cleaver" "Coral Ring" "Crude Bow" "Crusader Plate" "Crystal Wand" "Death Bow" "Fire Arrow Quiver" "Gilded Sallet" "Gnarled Branch" "Goathide Gloves" "Golden Buckler" "Great Mallet" "Iron Circlet" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Jade Hatchet" "Jagged Maul" "Latticed Ringmail" "Leather Hood" "Long Bow" "Ornate Sword" "Painted Buckler" "Plank Kite Shield" "Plate Vest" "Reaver Sword" "Reinforced Greaves" "Royal Bow" "Royal Staff" "Rusted Sword" "Scholar Boots" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Skinning Knife" "Sledgehammer" "Spiraled Wand" "Strapped Leather" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Woodsplitter"
 	SetTextColor 175 96 37
 	SetBorderColor 100 37 255 200 # BORDERCOLOR: Cosmetic: Fated Uniques
 	MinimapIcon 1 Blue Star
@@ -2041,8 +2128,6 @@ Show # Delve Mod Items - Expensive
 	
 	
 
-	
-	
 # Section: [1016]背叛聯盟詞綴裝備
 
 Show # 通貨 - 背叛聯盟通貨 - Veil
@@ -2088,9 +2173,174 @@ Show # Synthesis Mod Items - Synthesised Item
 	
 	
 	
-	
-	
-	
+# Section: [1018]劫盜聯盟裝備
+
+Show # 劫盜聯盟-附魔裝備
+	AnyEnchantment True
+	Rarity <= Rare
+	Class "Body Armours" "Bows" "Claws" "Daggers" "One Hand" "Quivers" "Rune Dagger" "Sceptre" "Shields" "Staves" "Two Hand" "Wand" "Warstaves"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-盜賊飾品 T1
+	ItemLevel >= 84
+	Rarity <= Rare
+	Class Trinket
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-盜賊飾品 T2
+	Rarity <= Rare
+	Class Trinket
+	SetFontSize 42
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜披風 T1
+	Rarity <= Rare
+	Class "Heist Cloak"
+	BaseType "Whisper-woven Cloak"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜披風 T2
+	Rarity <= Rare
+	Class "Heist Cloak"
+	BaseType "Hooded Cloak"
+	SetFontSize 42
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜披風 T3
+	Rarity <= Rare
+	Class "Heist Cloak"
+	SetFontSize 38
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜胸針 T1
+	Rarity <= Rare
+	Class "Heist Brooch"
+	BaseType "Foliate Brooch"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜胸針 T2
+	Rarity <= Rare
+	Class "Heist Brooch"
+	BaseType "Enamel Brooch"
+	SetFontSize 42
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜胸針 T3
+	Rarity <= Rare
+	Class "Heist Brooch"
+	SetFontSize 38
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜裝備 T1
+	Rarity <= Rare
+	Class "Heist Gear"
+	BaseType "Burst Band" "Obsidian Sharpening Stone" "Precise Arrowhead"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜裝備 T2
+	Rarity <= Rare
+	Class "Heist Gear"
+	BaseType "Aggregator Charm" "Fine Sharpening Stone" "Fragmenting Arrowhead"
+	SetFontSize 42
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜裝備 T3
+	Rarity <= Rare
+	Class "Heist Gear"
+	SetFontSize 38
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜工具 T1
+	Rarity <= Rare
+	Class "Heist Tool"
+	BaseType "Grandmaster Keyring" "Master Lockpick" "Regicide Disguise Kit" "Silkweave Sole" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder"
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜工具 T2
+	Rarity <= Rare
+	Class "Heist Tool"
+	BaseType "Azurite Flashpowder" "Espionage Disguise Kit" "Fine Lockpick" "Polished Sensing Charm" "Runed Bracers" "Shining Ward" "Skeleton Keyring" "Sulphur Blowtorch" "Winged Sole"
+	SetFontSize 42
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # 劫盜聯盟-劫盜工具 T3
+	Rarity <= Rare
+	Class "Heist Tool"
+	SetFontSize 38
+	SetBorderColor 102 178 255
+	CustomAlertSound "GoogleT_heist.ogg"
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+
+
+
+
+# Section: [1027] 附魔裝備
+
+Show
+	AnyEnchantment True
+	Class Helmets
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	MinimapIcon 0 Green Star
+	PlayEffect Green
+
+Show # %D3
+	AnyEnchantment True
+	Class Boots Gloves
+	SetFontSize 45
+	SetBorderColor 102 178 255
+	MinimapIcon 0 Green Star
+	PlayEffect Green
 	
 	
 	
